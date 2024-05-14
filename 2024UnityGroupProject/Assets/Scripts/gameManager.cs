@@ -15,13 +15,16 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject menuLose;
 
     public Image playerHPBar;
+    
+    public GameObject player;
+    
 
     [SerializeField] TMP_Text enemyCountText;
 
     [SerializeField] GameObject playerFlashDamage;
     //public Image playerHPBar;
 
-    public GameObject player;
+    
     //public playerController playerScript;
    
     public bool isPaused;

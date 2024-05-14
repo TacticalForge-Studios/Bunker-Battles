@@ -29,7 +29,7 @@ public class playerController : MonoBehaviour, IDamage
     void Start()
     {
         HPOrig = HP;
-        UpdatePlayerUI();
+        updatePlayerUI();
     }
 
     // Update is called once per frame
@@ -104,7 +104,7 @@ public class playerController : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        UpdatePlayerUI();
+        updatePlayerUI();
 
         if (HP <= 0)
         {
@@ -113,7 +113,7 @@ public class playerController : MonoBehaviour, IDamage
         }
     }
 
-    void UpdatePlayerUI()
+    void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
     }
