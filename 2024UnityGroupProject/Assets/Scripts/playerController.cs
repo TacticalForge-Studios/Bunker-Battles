@@ -115,7 +115,7 @@ public class playerController : MonoBehaviour, IDamage
 
     void UpdatePlayerUI()
     {
-        //gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
     }
 }
     
