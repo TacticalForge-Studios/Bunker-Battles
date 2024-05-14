@@ -106,11 +106,20 @@ public class playerController : MonoBehaviour, IDamage
         HP -= amount;
         updatePlayerUI();
 
+        StartCoroutine(flashDamage());
+
         if (HP <= 0)
         {
             // Hey I'm Dead
             gameManager.instance.YouLose();
         }
+    }
+
+    IEnumerator flashDamage()
+    {
+        gameManager.instance.playerFlashDamage.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        gameManager.instance.playerFlashDamage.SetActive(false);
     }
 
     void updatePlayerUI()
