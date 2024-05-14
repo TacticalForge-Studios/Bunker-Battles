@@ -29,7 +29,7 @@ public class playerController : MonoBehaviour, IDamage
     void Start()
     {
         HPOrig = HP;
-        UpdatePlayerUI();
+        updatePlayerUI();
     }
 
     // Update is called once per frame
@@ -104,7 +104,9 @@ public class playerController : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        UpdatePlayerUI();
+        updatePlayerUI();
+
+        StartCoroutine(flashDamage());
 
         if (HP <= 0)
         {
@@ -113,9 +115,16 @@ public class playerController : MonoBehaviour, IDamage
         }
     }
 
-    void UpdatePlayerUI()
+    IEnumerator flashDamage()
     {
-        //gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
+        gameManager.instance.playerFlashDamage.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        gameManager.instance.playerFlashDamage.SetActive(false);
+    }
+
+    void updatePlayerUI()
+    {
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
     }
 }
     
