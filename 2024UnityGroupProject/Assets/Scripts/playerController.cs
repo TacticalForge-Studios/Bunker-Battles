@@ -17,7 +17,7 @@ public class playerController : MonoBehaviour, IDamage
     [SerializeField] int shootDamage;
     [SerializeField] int shootDist;
     [SerializeField] float shootRate;
-    [SerializeField] GameObject cube;
+    
 
     Vector3 moveDir;
     Vector3 playerVel;
