@@ -25,8 +25,15 @@ public class bullet : MonoBehaviour
             return;
         }
 
-        IDamage dmg = other.gameObject.GetComponent<IDamage>();
+        IDamage friendlyFire = other.gameObject.GetComponent<EnemyAI>();
+        if (friendlyFire != null)
+        {
+            return;
 
+        }
+
+        IDamage dmg = other.gameObject.GetComponent<IDamage>();
+        
         if (dmg != null)
         {
             dmg.takeDamage(damage);

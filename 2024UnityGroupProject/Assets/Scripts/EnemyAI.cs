@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAI : MonoBehaviour, IDamage
 {
 
     [SerializeField] NavMeshAgent agent;
@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (playerInRange)
         {
-            agent.SetDestination(gameManager.instance.transform.position);
+            agent.SetDestination(gameManager.instance.player.transform.position);
 
             if (!isShooting)
             {
@@ -44,6 +44,8 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
+
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
@@ -62,7 +64,7 @@ public class EnemyAI : MonoBehaviour
     {
         HP -= amount;
         agent.SetDestination(gameManager.instance.player.transform.position);
-        StartCoroutine(flashRed());
+        StartCoroutine(flashRed(model.material.color));
 
         if(HP <= 0)
         {
@@ -71,13 +73,35 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    IEnumerator flashRed()
+    IEnumerator flashRed(Color color)
     {
-        model.material.color = Color.red;
+        
 
-        yield return new WaitForSeconds(0.1f);
+        if (model.material.color == Color.blue)
+        {
+            model.material.color = Color.red;
 
-        model.material.color = model.material.color;
+            yield return new WaitForSeconds(0.1f);
+
+            model.material.color = Color.blue;
+        }
+        else if(model.material.color == Color.white)
+        {
+            model.material.color = Color.red;
+
+            yield return new WaitForSeconds(0.1f);
+
+            model.material.color = Color.white;
+        }
+        else if(model.material.color == Color.black)
+        {
+            model.material.color = Color.red;
+
+            yield return new WaitForSeconds(0.1f);
+
+            model.material.color = Color.black;
+        }
+        
     }
 
     IEnumerator shoot()
