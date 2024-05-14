@@ -17,7 +17,7 @@ public class playerController : MonoBehaviour, IDamage
     [SerializeField] int shootDamage;
     [SerializeField] int shootDist;
     [SerializeField] float shootRate;
-    [SerializeField] GameObject cube;
+    
 
     Vector3 moveDir;
     Vector3 playerVel;
@@ -115,7 +115,7 @@ public class playerController : MonoBehaviour, IDamage
 
     void UpdatePlayerUI()
     {
-        //gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
     }
 }
     
