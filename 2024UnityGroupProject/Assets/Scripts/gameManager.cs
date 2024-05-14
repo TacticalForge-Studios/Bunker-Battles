@@ -22,10 +22,9 @@ public class gameManager : MonoBehaviour
     [SerializeField] TMP_Text enemyCountText;
 
     public GameObject playerFlashDamage;
-    //public Image playerHPBar;
 
     
-    //public playerController playerScript;
+    public playerController playerScript;
    
     public bool isPaused;
     int enemyCount;
@@ -35,7 +34,7 @@ public class gameManager : MonoBehaviour
     {
         instance = this;
         player = GameObject.FindWithTag("Player");
-        //playerScript = player.GetComponent<playerController>();
+        playerScript = player.GetComponent<playerController>();
     }
 
     // Update is called once per frame
