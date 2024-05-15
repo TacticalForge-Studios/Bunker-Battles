@@ -42,9 +42,12 @@ public class bullet : MonoBehaviour
 
         IDamage dmg = other.gameObject.GetComponent<IDamage>();
         
+        
+        
         if (dmg != null)
         {
             dmg.takeDamage(damage);
+            
         }
 
         Destroy(gameObject);

@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (33)
@@ -236,6 +240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (55)
@@ -268,6 +276,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,6 +374,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (123)
@@ -390,6 +406,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -484,6 +504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (159)
@@ -547,6 +571,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -614,6 +642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (20)
@@ -642,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -736,6 +772,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (60)
@@ -801,6 +841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (45)
@@ -818,71 +862,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
---- !u!1001 &89457439
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1392728244909078579, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369228629303128109, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_Radius
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556586438685020445, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_Name
-      value: Enemy Sniper (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -41.039574
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.375591
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -21.64508
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393517806009687004, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
 --- !u!1001 &93350295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -894,6 +873,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,6 +938,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1021,6 +1008,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.51954
@@ -1066,67 +1057,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7662255f10d94e479595b15d484285b, type: 3}
---- !u!1001 &110091761
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -57.232
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 19.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64107394
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.76747906
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 100.256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4352362081713773660, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_Name
-      value: Enemy Melee (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5960717933509681069, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
 --- !u!1001 &112773611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1138,6 +1068,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1232,6 +1166,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (38)
@@ -1295,6 +1233,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -1362,6 +1304,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (78)
@@ -1425,6 +1371,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -1492,6 +1442,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (113)
@@ -1520,6 +1474,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1581,6 +1539,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1675,6 +1637,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (97)
@@ -1707,6 +1673,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1768,6 +1738,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1862,6 +1836,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (8)
@@ -1879,6 +1857,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+--- !u!1001 &202996541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4736574162930514594, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_Name
+      value: Enemy Melee (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.569435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3750005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.275121
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.64107394
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76747906
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 100.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
 --- !u!1001 &203157145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1927,6 +1962,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (127)
@@ -1955,6 +1994,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2012,6 +2055,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2106,6 +2153,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (52)
@@ -2134,6 +2185,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2228,6 +2283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (143)
@@ -2293,6 +2352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (85)
@@ -2329,6 +2392,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2390,6 +2457,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2484,6 +2555,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (76)
@@ -2512,6 +2587,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2574,6 +2653,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -2630,6 +2713,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2688,6 +2775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OusideTerrainWalls (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2744,6 +2835,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2838,6 +2933,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (2)
@@ -2903,6 +3002,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (7)
@@ -2935,6 +3038,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3029,6 +3136,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (62)
@@ -3094,6 +3205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (37)
@@ -3122,6 +3237,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3216,6 +3335,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (118)
@@ -3281,6 +3404,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (133)
@@ -3309,6 +3436,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3366,6 +3497,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3468,6 +3603,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (40)
@@ -3492,6 +3631,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3586,6 +3729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (46)
@@ -3649,6 +3796,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -3716,6 +3867,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (139)
@@ -3744,6 +3899,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3838,6 +3997,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (124)
@@ -3901,6 +4064,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -3968,6 +4135,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (10)
@@ -4031,6 +4202,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -4098,6 +4273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (81)
@@ -4161,6 +4340,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -4236,6 +4419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (39)
@@ -4291,6 +4478,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -4358,6 +4549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (59)
@@ -4421,6 +4616,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -4488,6 +4687,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (34)
@@ -4520,6 +4723,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4577,6 +4784,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4671,6 +4882,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (126)
@@ -4736,6 +4951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (137)
@@ -4764,6 +4983,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4858,6 +5081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (148)
@@ -4921,6 +5148,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -4988,6 +5219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (158)
@@ -5053,6 +5288,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (63)
@@ -5081,6 +5320,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5175,6 +5418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (104)
@@ -5203,6 +5450,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5264,6 +5515,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5358,6 +5613,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (61)
@@ -5390,6 +5649,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5484,6 +5747,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (43)
@@ -5501,63 +5768,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
---- !u!1001 &669732375
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -43.064316
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.375591
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.76428
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64107394
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.76747906
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 100.256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4352362081713773660, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_Name
-      value: Enemy Melee (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
 --- !u!1001 &678810680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5604,6 +5814,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -5671,6 +5885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (108)
@@ -5696,6 +5914,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336585763685636352, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_Radius
+      value: 5.34
+      objectReference: {fileID: 0}
     - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.761726
@@ -5756,6 +5978,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5850,6 +6076,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (136)
@@ -5915,6 +6145,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (19)
@@ -5943,6 +6177,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6037,6 +6275,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (11)
@@ -6100,6 +6342,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -6167,6 +6413,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (28)
@@ -6194,7 +6444,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2369228629303128109, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
       propertyPath: m_Radius
-      value: 21
+      value: 23.2
       objectReference: {fileID: 0}
     - target: {fileID: 4556586438685020445, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
       propertyPath: m_Name
@@ -6293,6 +6543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (155)
@@ -6321,6 +6575,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6415,6 +6673,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (27)
@@ -6480,6 +6742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (16)
@@ -6543,6 +6809,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -6671,6 +6941,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (96)
@@ -6734,6 +7008,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -6801,6 +7079,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (120)
@@ -6833,6 +7115,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6890,6 +7176,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6984,6 +7274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (102)
@@ -7016,6 +7310,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7110,6 +7408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (54)
@@ -7173,6 +7475,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -7240,6 +7546,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (95)
@@ -7268,6 +7578,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7362,6 +7676,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (67)
@@ -7379,63 +7697,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
---- !u!1001 &928454476
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -21.692137
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.5163965
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64107394
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.76747906
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 100.256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4352362081713773660, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_Name
-      value: Enemy Melee (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
 --- !u!1001 &928518471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7447,6 +7708,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7541,6 +7806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (30)
@@ -7598,6 +7867,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (15)
@@ -7630,6 +7903,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7736,6 +8013,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (42)
@@ -7801,6 +8082,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (6)
@@ -7829,6 +8114,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7890,6 +8179,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7984,6 +8277,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (65)
@@ -8047,6 +8344,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -8114,6 +8415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (150)
@@ -8179,6 +8484,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (25)
@@ -8242,6 +8551,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -8403,6 +8716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (141)
@@ -8435,6 +8752,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8493,6 +8814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OusideTerrainWalls (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8549,6 +8874,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8607,6 +8936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OusideTerrainWalls (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -8663,6 +8996,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8757,6 +9094,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (50)
@@ -8822,6 +9163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (144)
@@ -8850,6 +9195,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9001,6 +9350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (87)
@@ -9029,6 +9382,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9123,6 +9480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (149)
@@ -9188,6 +9549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (105)
@@ -9216,6 +9581,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9273,6 +9642,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9367,6 +9740,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (29)
@@ -9430,6 +9807,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -9497,6 +9878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (125)
@@ -9562,6 +9947,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (32)
@@ -9598,6 +9987,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9659,6 +10052,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalScale.x
@@ -9765,6 +10162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (98)
@@ -9830,6 +10231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (1)
@@ -9858,6 +10263,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9952,6 +10361,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (112)
@@ -10015,6 +10428,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -10086,6 +10503,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (5)
@@ -10114,6 +10543,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10208,6 +10641,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (121)
@@ -10271,6 +10708,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -10338,6 +10779,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (22)
@@ -10401,6 +10846,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -10468,6 +10917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (77)
@@ -10485,6 +10938,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+--- !u!1001 &1363412607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3915965319757942379, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_Name
+      value: Enemy Gunner (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -43.649
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.375591
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
 --- !u!1001 &1394376597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10496,6 +11006,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10598,6 +11112,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (41)
@@ -10618,6 +11136,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10712,6 +11234,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (147)
@@ -10775,6 +11301,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -10842,6 +11372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (14)
@@ -10867,6 +11401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3901975747866178753, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
+      propertyPath: m_Radius
+      value: 7.13
+      objectReference: {fileID: 0}
     - target: {fileID: 3915965319757942379, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_Name
       value: Enemy Gunner (1)
@@ -10927,6 +11465,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11021,6 +11563,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (66)
@@ -11049,6 +11595,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11143,6 +11693,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (24)
@@ -11206,6 +11760,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -11273,6 +11831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (91)
@@ -11336,6 +11898,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -11403,6 +11969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (135)
@@ -11468,6 +12038,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (21)
@@ -11496,6 +12070,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11590,6 +12168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (9)
@@ -11618,6 +12200,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11675,6 +12261,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11769,6 +12359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (132)
@@ -11834,6 +12428,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (146)
@@ -11862,6 +12460,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11956,6 +12558,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (26)
@@ -12019,6 +12625,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -12147,6 +12757,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (49)
@@ -12175,6 +12789,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12236,6 +12854,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12330,6 +12952,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (145)
@@ -12395,6 +13021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (94)
@@ -12427,6 +13057,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12489,6 +13123,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -12545,6 +13183,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12607,6 +13249,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12667,6 +13313,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12761,6 +13411,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (72)
@@ -12824,6 +13478,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -12891,6 +13549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (154)
@@ -12923,6 +13585,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12969,63 +13635,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
---- !u!1001 &1746180704
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -56.93034
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.322625
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 12.294
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.64107394
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.76747906
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 100.256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3575399457421689004, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4352362081713773660, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
-      propertyPath: m_Name
-      value: Enemy Melee (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
 --- !u!1001 &1748561182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13041,6 +13650,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13135,6 +13748,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (89)
@@ -13198,6 +13815,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -13265,6 +13886,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (111)
@@ -13330,6 +13955,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (109)
@@ -13358,6 +13987,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13420,6 +14053,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13481,6 +14118,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -13537,6 +14178,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13631,6 +14276,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (4)
@@ -13659,6 +14308,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13753,6 +14406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (153)
@@ -13816,6 +14473,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -13883,6 +14544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (114)
@@ -13946,6 +14611,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -14013,6 +14682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (129)
@@ -14076,6 +14749,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -14143,6 +14820,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (75)
@@ -14175,6 +14856,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14269,6 +14954,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (83)
@@ -14332,6 +15021,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -14399,6 +15092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (93)
@@ -14462,6 +15159,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -14529,6 +15230,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (18)
@@ -14592,6 +15297,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -14659,6 +15368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (56)
@@ -14687,6 +15400,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14744,6 +15461,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14838,6 +15559,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (100)
@@ -14901,6 +15626,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -14968,6 +15697,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (51)
@@ -14996,6 +15729,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15054,6 +15791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OusideTerrainWalls (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -15110,6 +15851,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15171,6 +15916,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalScale.x
@@ -15244,6 +15993,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15338,6 +16091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (131)
@@ -15366,6 +16123,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15427,6 +16188,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15525,6 +16290,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (31)
@@ -15580,6 +16349,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -15647,6 +16420,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (99)
@@ -15712,6 +16489,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (140)
@@ -15744,6 +16525,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15838,6 +16623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (86)
@@ -15901,6 +16690,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -15968,6 +16761,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (151)
@@ -16000,6 +16797,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16046,6 +16847,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+--- !u!1001 &2122608745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4736574162930514594, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_Name
+      value: Enemy Melee (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.315502
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3749998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.013052
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.64107394
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76747906
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 100.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485391270060407866, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26abd6f43c3bdab45ab7ead2c7f05523, type: 3}
 --- !u!1001 &2128334131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16057,6 +16915,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16151,6 +17013,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (142)
@@ -16214,6 +17080,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6658189333035231373, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
@@ -16281,6 +17151,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (47)
@@ -16309,6 +17183,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16403,6 +17281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls (101)
@@ -16431,6 +17313,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16492,6 +17378,10 @@ PrefabInstance:
     - target: {fileID: 1845413531643208085, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640934223222013120, guid: f7662255f10d94e479595b15d484285b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8173418164696652206, guid: f7662255f10d94e479595b15d484285b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16651,6 +17541,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7918297720543141271, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8401359000499596937, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
       propertyPath: m_Name
       value: Interior Walls
@@ -16679,6 +17573,10 @@ PrefabInstance:
     - target: {fileID: 2725760727044149134, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348287349983618112, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223257906262648696, guid: f03d3f27f110b4b4dab1dd61abfa987c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16733,6 +17631,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2369228629303128109, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
+      propertyPath: m_Radius
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 4556586438685020445, guid: 15b2f8f720c55f545aa48edf3c85f883, type: 3}
       propertyPath: m_Name
       value: Enemy Sniper
@@ -16897,15 +17799,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3901975747866178753, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_Radius
-      value: 12
+      value: 10.54
       objectReference: {fileID: 0}
     - target: {fileID: 3901975747866178753, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_Center.x
-      value: -0.56670284
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3901975747866178753, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_Center.z
-      value: 4.1005135
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3915965319757942379, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_Name
@@ -16929,7 +17831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.92
+      value: -4.48
       objectReference: {fileID: 0}
     - target: {fileID: 8895189431364632340, guid: d0b4784de343da740b39bdad6f7656c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17012,6 +17914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 24.448
       objectReference: {fileID: 0}
+    - target: {fileID: 4007936351431978802, guid: 8a1d6212b552b6648b9d7c138e30e716, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7276168816148992863, guid: 8a1d6212b552b6648b9d7c138e30e716, type: 3}
       propertyPath: m_Name
       value: Ramp
@@ -17036,6 +17942,10 @@ PrefabInstance:
     - target: {fileID: 1074287271929591257, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_Name
       value: OusideTerrainWalls
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477676520087965722, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702189678086121246, guid: 804297bce6130454ea5c351ef68abf51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17345,14 +18255,12 @@ SceneRoots:
   - {fileID: 97083125}
   - {fileID: 2011233343}
   - {fileID: 254454447}
-  - {fileID: 928454476}
   - {fileID: 1423655644}
   - {fileID: 742613744}
   - {fileID: 1623728915}
   - {fileID: 816474299}
-  - {fileID: 110091761}
-  - {fileID: 1746180704}
   - {fileID: 1111389905}
   - {fileID: 687781929}
-  - {fileID: 89457439}
-  - {fileID: 669732375}
+  - {fileID: 2122608745}
+  - {fileID: 202996541}
+  - {fileID: 1363412607}

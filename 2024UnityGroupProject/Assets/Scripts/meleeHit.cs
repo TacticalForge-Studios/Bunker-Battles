@@ -9,7 +9,7 @@ public class meleeHit : MonoBehaviour
     [SerializeField] Rigidbody rb;
 
     [SerializeField] int damage;
-    
+    [SerializeField] bool hit;
     
     // Start is called before the first frame update
     void Start()
@@ -33,7 +33,13 @@ public class meleeHit : MonoBehaviour
 
         if (dmg != null )
         {
-            dmg.takeDamage(damage);
+            hit = !hit;
+            
+            if(hit == true)
+            {
+                dmg.takeDamage(damage);
+            }
+            
         }
     }
     
