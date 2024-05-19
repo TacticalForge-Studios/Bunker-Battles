@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class MeleeEnemy : MonoBehaviour, IDamage
 {
@@ -14,12 +15,18 @@ public class MeleeEnemy : MonoBehaviour, IDamage
 
     [SerializeField] float hitRate;
 
+    public Image enemyHPBar;
+
     bool isHitting;
     bool playerInRange;
+
+    int HPOrig;
 
     // Start is called before the first frame update
     void Start()
     {
+        HPOrig = HP;
+        UpadateEnemyUI();
         gameManager.instance.UpdateGameGoal(1);
     }
 
@@ -58,6 +65,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
+        UpadateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
         StartCoroutine(flashRed(model.material.color));
 
@@ -104,5 +112,10 @@ public class MeleeEnemy : MonoBehaviour, IDamage
         isHitting = true;
         yield return new WaitForSeconds(hitRate);
         isHitting = false;
+    }
+
+    void UpadateEnemyUI()
+    {
+        enemyHPBar.fillAmount = (float)HP / HPOrig;
     }
 }

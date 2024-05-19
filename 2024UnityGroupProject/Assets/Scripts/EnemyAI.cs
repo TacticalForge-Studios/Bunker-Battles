@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 
 public class EnemyAI : MonoBehaviour, IDamage
@@ -19,12 +20,18 @@ public class EnemyAI : MonoBehaviour, IDamage
     [SerializeField] GameObject bullet;
     [SerializeField] float shootRate;
 
+    public Image enemyHPBar;
+
     bool isShooting;
     bool playerInRange;
+
+    int HPOrig;
 
     // Start is called before the first frame update
     void Start()
     {
+        HPOrig = HP;
+        UpdateEnemyUI();
         gameManager.instance.UpdateGameGoal(1);
     }
 
@@ -63,6 +70,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
+        UpdateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
         StartCoroutine(flashRed(model.material.color));
 
@@ -111,6 +119,11 @@ public class EnemyAI : MonoBehaviour, IDamage
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
 
+    }
+
+    public void UpdateEnemyUI()
+    {
+        enemyHPBar.fillAmount = (float)HP / HPOrig;
     }
 
 
