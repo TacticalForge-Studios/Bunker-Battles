@@ -15,6 +15,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
 
     [SerializeField] float hitRate;
 
+    public Image enemyHPBarBack;
     public Image enemyHPBar;
 
     bool isHitting;
@@ -42,6 +43,8 @@ public class MeleeEnemy : MonoBehaviour, IDamage
                 StartCoroutine(melee());
             }
         }
+        enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
+        enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
     }
 
 

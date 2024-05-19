@@ -20,6 +20,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     [SerializeField] GameObject bullet;
     [SerializeField] float shootRate;
 
+    public Image enemyHPBarBack;
     public Image enemyHPBar;
 
     bool isShooting;
@@ -47,6 +48,8 @@ public class EnemyAI : MonoBehaviour, IDamage
                 StartCoroutine(shoot());
             }
         }
+        enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
+        enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -124,6 +127,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     public void UpdateEnemyUI()
     {
         enemyHPBar.fillAmount = (float)HP / HPOrig;
+        
     }
 
 

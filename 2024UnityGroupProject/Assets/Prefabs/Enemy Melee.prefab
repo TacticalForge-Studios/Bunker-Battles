@@ -234,6 +234,7 @@ MonoBehaviour:
   HP: 10
   damageDone: 10
   hitRate: 3
+  enemyHPBarBack: {fileID: 138459598067125632}
   enemyHPBar: {fileID: 9181477872506221350}
 --- !u!195 &8730980842165093538
 NavMeshAgent:
@@ -349,7 +350,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5
+  m_Radius: 5.34
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5997744309099372576
 GameObject:
