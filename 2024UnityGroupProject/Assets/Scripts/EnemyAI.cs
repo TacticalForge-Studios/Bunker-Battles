@@ -8,14 +8,19 @@ using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour, IDamage
 {
-
+    [SerializeField] Animator anim;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Renderer model;
     [SerializeField] Transform shootPos;
+    [SerializeField] Transform headPos;
     
 
     [SerializeField] int HP;
-    [SerializeField] int damageDone;
+    [SerializeField] int viewAngle;
+    [SerializeField] int faceTargetSpeed;
+    [SerializeField] int animSpeedTrans;
+    [SerializeField] int roamDist;
+    [SerializeField] int roamTimer;
 
     [SerializeField] GameObject bullet;
     [SerializeField] float shootRate;
@@ -25,12 +30,21 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     bool isShooting;
     bool playerInRange;
+    bool destChosen;
+
+    Vector3 playerDir;
+    Vector3 startingPos;
 
     int HPOrig;
+
+    float angleToPlayer;
+    float stoppingDistOrig;
 
     // Start is called before the first frame update
     void Start()
     {
+        startingPos = transform.position;
+        stoppingDistOrig = agent.stoppingDistance;
         HPOrig = HP;
         UpdateEnemyUI();
         gameManager.instance.UpdateGameGoal(1);
@@ -39,17 +53,75 @@ public class EnemyAI : MonoBehaviour, IDamage
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange)
-        {
-            agent.SetDestination(gameManager.instance.player.transform.position);
+        float animSpeed = agent.velocity.normalized.magnitude;
+        anim.SetFloat("Speed", Mathf.Lerp(anim.GetFloat("Speed"), animSpeed, Time.deltaTime * animSpeedTrans));
 
-            if (!isShooting)
-            {
-                StartCoroutine(shoot());
-            }
+        if (playerInRange && !canSeePlayer())
+        {
+            StartCoroutine(roam());            
         }
+        else if (!playerInRange)
+        {
+            StartCoroutine(roam());
+        }
+
         enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
         enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
+    }
+
+    IEnumerator roam()
+    {
+        if(!destChosen && agent.remainingDistance < 0.05f)
+        {
+            destChosen = true;
+            agent.stoppingDistance = 0;
+            yield return new WaitForSeconds(roamTimer);
+
+            Vector3 randPos = Random.insideUnitSphere * roamDist;
+            randPos += startingPos;
+
+            NavMeshHit hit;
+            NavMesh.SamplePosition(randPos, out hit, roamDist, 1);
+            agent.SetDestination(hit.position);
+            destChosen = false;
+        }
+    }
+
+    bool canSeePlayer()
+    {
+        playerDir = gameManager.instance.player.transform.position - headPos.position;
+        agent.SetDestination(gameManager.instance.player.transform.position);
+
+        Debug.Log(angleToPlayer);
+        Debug.DrawRay(headPos.position, new Vector3(playerDir.x, playerDir.y + 1, playerDir.z));
+
+        RaycastHit hit;
+        if(Physics.Raycast(headPos.position, playerDir, out hit))
+        {
+            if (hit.collider.CompareTag("Player") && angleToPlayer <= viewAngle)
+            {
+                agent.stoppingDistance = stoppingDistOrig;
+                agent.SetDestination(gameManager.instance.player.transform.position);
+
+                if (!isShooting)
+                {
+                    StartCoroutine(shoot());
+                }
+                if (agent.remainingDistance <= agent.stoppingDistance)
+                {
+                    faceTarget();
+                }
+                return true;
+            }
+        }
+        agent.stoppingDistance = 0;
+        return false;
+    }
+
+    void faceTarget()
+    {
+        Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, 0, playerDir.z));
+        transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * faceTargetSpeed);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,6 +139,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            agent.stoppingDistance = 0;
         }
     }
 
@@ -118,7 +191,8 @@ public class EnemyAI : MonoBehaviour, IDamage
     IEnumerator shoot()
     {
         isShooting = true;
-        Instantiate(bullet, shootPos.position, transform.rotation);
+        anim.SetTrigger("Shoot");
+        
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class playerController : MonoBehaviour, IDamage
+public class playerController : MonoBehaviour, IDamage, medkitHeal
 {
     [SerializeField] CharacterController controller;
 
@@ -113,6 +113,18 @@ public class playerController : MonoBehaviour, IDamage
             // Hey I'm Dead
             gameManager.instance.YouLose();
         }
+    }
+
+    public void Heal(int amount)
+    {
+        HP += amount;
+        if (HP > HPOrig)
+        {
+            HP = HPOrig;
+        }
+        updatePlayerUI();
+
+       
     }
 
     IEnumerator flashDamage()
