@@ -90,7 +90,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     bool canSeePlayer()
     {
         playerDir = gameManager.instance.player.transform.position - headPos.position;
-        agent.SetDestination(gameManager.instance.player.transform.position);
+        angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, playerDir.y + 1, playerDir.z), transform.forward);
 
         Debug.Log(angleToPlayer);
         Debug.DrawRay(headPos.position, new Vector3(playerDir.x, playerDir.y + 1, playerDir.z));
@@ -153,7 +153,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             gameManager.instance.UpdateGameGoal(-1);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
@@ -198,13 +198,21 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     }
 
+    public void createBullet()
+    {
+        Instantiate(bullet, shootPos.position, transform.rotation);
+    }
+
     public void UpdateEnemyUI()
     {
         enemyHPBar.fillAmount = (float)HP / HPOrig;
         
     }
 
-
+    public int GetHP()
+    {
+        return HP;
+    }
 
 
 }
