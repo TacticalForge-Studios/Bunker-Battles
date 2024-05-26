@@ -29,20 +29,37 @@ public class meleeHit : MonoBehaviour
 
         }
 
+        IDamage friendlyFire1 = other.gameObject.GetComponent<EnemyAI>();
+        if (friendlyFire1 != null)
+        {
+            return;
+        }
+
         IDamage dmg = other.gameObject.GetComponent<IDamage>();
 
         if (dmg != null )
         {
             hit = !hit;
-            
+
             if(hit == true)
             {
-                dmg.takeDamage(damage);
+                StartCoroutine(dealDamage(dmg));
+                
             }
             
         }
     }
     
+    IEnumerator dealDamage(IDamage dmg)
+    {
+        if(hit == true)
+        {
+            
+            dmg.takeDamage(damage);
+            yield return new WaitForSeconds(5);
+            hit = false;
+        }
+    }
         
 
         

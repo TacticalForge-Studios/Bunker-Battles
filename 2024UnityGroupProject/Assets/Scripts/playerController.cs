@@ -86,7 +86,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDist))
         {
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
 
             IDamage dmg = hit.collider.GetComponent<IDamage>();
 

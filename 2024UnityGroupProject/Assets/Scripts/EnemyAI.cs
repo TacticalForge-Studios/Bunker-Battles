@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -27,6 +28,8 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     public Image enemyHPBarBack;
     public Image enemyHPBar;
+    public Image enemyName;
+    public Image sniperSkull;
 
     bool isShooting;
     bool playerInRange;
@@ -47,7 +50,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         stoppingDistOrig = agent.stoppingDistance;
         HPOrig = HP;
         UpdateEnemyUI();
-        gameManager.instance.UpdateGameGoal(1);
+        //gameManager.instance.UpdateGameGoal(1);
     }
 
     // Update is called once per frame
@@ -67,6 +70,13 @@ public class EnemyAI : MonoBehaviour, IDamage
 
         enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
         enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
+        enemyName.transform.rotation = gameManager.instance.player.transform.rotation;
+        if(sniperSkull != null)
+        {
+            sniperSkull.transform.rotation = gameManager.instance.player.transform.rotation;
+        }
+        
+        
     }
 
     IEnumerator roam()
@@ -120,7 +130,7 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     void faceTarget()
     {
-        Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, 0, playerDir.z));
+        Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, playerDir.y, playerDir.z));
         transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * faceTargetSpeed);
     }
 
@@ -153,7 +163,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             gameManager.instance.UpdateGameGoal(-1);
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
