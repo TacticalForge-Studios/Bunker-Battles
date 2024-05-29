@@ -18452,6 +18452,14 @@ PrefabInstance:
       propertyPath: HP
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: hitEffectBlood
+      value: 
+      objectReference: {fileID: 4349289171682470801, guid: 0373245e0cb7efa4eb62f7e68bbfecf2, type: 3}
     - target: {fileID: 3360185070103637596, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
