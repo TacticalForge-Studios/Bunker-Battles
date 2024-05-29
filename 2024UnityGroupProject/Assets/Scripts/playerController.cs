@@ -6,6 +6,7 @@ using UnityEngine;
 public class playerController : MonoBehaviour, IDamage, medkitHeal
 {
     [SerializeField] CharacterController controller;
+    [SerializeField] GameObject gunModel;
 
     [SerializeField] int HP;
     [SerializeField] int speed;
@@ -17,6 +18,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     [SerializeField] int shootDamage;
     [SerializeField] int shootDist;
     [SerializeField] float shootRate;
+
+    [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
     public ParticleSystem hitEffect;
     public ParticleSystem hitEffectBlood;
@@ -31,6 +34,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     int currentStamina;
     int staminaMod;
     int staminaRegen;
+    int selectedGun;
 
     bool isShooting;
 
@@ -45,7 +49,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     void Update()
     {
         Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
-
+        gunSelect();
         movement();
     }
 
@@ -53,9 +57,14 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     {
         sprint();
         
-        if (Input.GetButton("Fire1") && !isShooting)
+        if (Input.GetButton("Fire1") && gunList.Count > 0 && gunList[selectedGun].ammoCurrent > 0 && !isShooting)
         {
             StartCoroutine(Shoot());
+        }
+
+        if (Input.GetButtonDown("Reload"))
+        {
+            gunList[selectedGun].ammoCurrent = gunList[selectedGun].ammoMax;
         }
 
         if (controller.isGrounded)
@@ -113,6 +122,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     IEnumerator Shoot()
     {
         isShooting = true;
+
+        gunList[selectedGun].ammoCurrent--;
 
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDist))
@@ -187,10 +198,44 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         return HPOrig;
     }
 
+    public void pickUpGun(gunStats gun)
+    {
+        gunList.Add(gun);
 
+        selectedGun = gunList.Count - 1;
+
+        shootDamage = gun.shootDamage;
+        shootDist = gun.shootDist;
+        shootRate = gun.shootRate;
+        gunModel.GetComponent<MeshFilter>().sharedMesh = gun.gunModel.GetComponent<MeshFilter>().sharedMesh;
+        gunModel.GetComponent<MeshRenderer>().sharedMaterial = gun.gunModel.GetComponent<MeshRenderer>().sharedMaterial;
+    }
+
+    void gunSelect()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0 && selectedGun < gunList.Count - 1)
+        {
+            selectedGun++;
+            changeGun();
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && selectedGun > 0)
+        {
+            selectedGun--;
+            changeGun();
+        }
+    }
+    public void changeGun()
+    {
+
+        shootDamage = gunList[selectedGun].shootDamage;
+        shootDist = gunList[selectedGun].shootDist;
+        shootRate = gunList[selectedGun].shootRate;
+        gunModel.GetComponent<MeshFilter>().sharedMesh = gunList[selectedGun].gunModel.GetComponent<MeshFilter>().sharedMesh;
+        gunModel.GetComponent<MeshRenderer>().sharedMaterial = gunList[selectedGun].gunModel.GetComponent<MeshRenderer>().sharedMaterial;
+    }
 
 }
 
 
-    
+
 
