@@ -138,6 +138,21 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
     }
+
+    public int GetHP()
+    {
+        return HP;
+    }
+
+    public int GetHPOrig()
+    {
+        return HPOrig;
+    }
+
+
+
 }
+
+
     
 
