@@ -17,6 +17,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     [SerializeField] int shootDamage;
     [SerializeField] int shootDist;
     [SerializeField] float shootRate;
+
+    public ParticleSystem hitEffect;
+    public ParticleSystem hitEffectBlood;
     
 
     Vector3 moveDir;
@@ -93,6 +96,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
             if (hit.transform != transform && dmg != null)
             {
                 dmg.takeDamage(shootDamage);
+                Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
+            }
+            else
+            {
+                
+                Instantiate(hitEffect, hit.point, Quaternion.identity);
             }
 
         }
