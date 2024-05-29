@@ -24,8 +24,14 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
     Vector3 moveDir;
     Vector3 playerVel;
+
     int jumpCount;
     int HPOrig;
+    int maxStamina = 75;
+    int currentStamina;
+    int staminaMod;
+    int staminaRegen;
+
     bool isShooting;
 
     // Start is called before the first frame update
@@ -75,10 +81,32 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         if (Input.GetButtonDown("Sprint"))
         {
             speed *= sprintMod;
+
+           // while (currentStamina >= 0)
+            //{
+               //if (Input.GetButtonUp("Sprint"))
+               //{
+               //     break;
+               //}
+                currentStamina -= staminaMod;
+                updatePlayerUI();
+            //}
         }
         else if (Input.GetButtonUp("Sprint"))
         {
             speed /= sprintMod;
+
+            //while(true)
+            //{
+                currentStamina += staminaRegen;
+
+                if(currentStamina >= maxStamina)
+                {
+                    currentStamina = maxStamina;
+                   // break;
+                }
+                updatePlayerUI();
+            //}
         }
     }
 
@@ -146,6 +174,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
+        gameManager.instance.playerStaminaBar.fillAmount = (float)currentStamina / maxStamina;
     }
 
     public int GetHP()

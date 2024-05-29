@@ -19403,6 +19403,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5739562376850838939, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+      propertyPath: playerXPBar
+      value: 
+      objectReference: {fileID: 681029598}
+    - target: {fileID: 5739562376850838939, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+      propertyPath: playerStaminaBar
+      value: 
+      objectReference: {fileID: 2139310363}
     - target: {fileID: 5891425921056597811, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
       propertyPath: m_IsActive
       value: 1
