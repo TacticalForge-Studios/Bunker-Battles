@@ -14,8 +14,11 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.forward * speed;
+
+        rb.velocity = (transform.forward * speed);
+
         Destroy(gameObject, destroyTime);
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -26,7 +29,7 @@ public class bullet : MonoBehaviour
         }
 
         IDamage friendlyFire = other.gameObject.GetComponent<EnemyAI>();
-       
+
         if (friendlyFire != null)
         {
             return;
@@ -41,13 +44,13 @@ public class bullet : MonoBehaviour
         }
 
         IDamage dmg = other.gameObject.GetComponent<IDamage>();
-        
-        
-        
+
+
+
         if (dmg != null)
         {
             dmg.takeDamage(damage);
-            
+
         }
 
         Destroy(gameObject);

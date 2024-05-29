@@ -118,13 +118,13 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     public void Heal(int amount)
     {
         HP += amount;
+        
         if (HP > HPOrig)
         {
             HP = HPOrig;
         }
         updatePlayerUI();
 
-       
     }
 
     IEnumerator flashDamage()
