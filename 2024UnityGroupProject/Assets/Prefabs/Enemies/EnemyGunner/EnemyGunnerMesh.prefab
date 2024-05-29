@@ -582,7 +582,7 @@ MonoBehaviour:
   headPos: {fileID: 6976065746176242613}
   HP: 10
   viewAngle: 75
-  faceTargetSpeed: 8
+  faceTargetSpeed: 10
   animSpeedTrans: 5
   roamDist: 5
   roamTimer: 3
@@ -591,6 +591,7 @@ MonoBehaviour:
   enemyHPBarBack: {fileID: 8860484372420145712}
   enemyHPBar: {fileID: 3280108252849135219}
   enemyName: {fileID: 6769980464998802983}
+  sniperSkull: {fileID: 0}
 --- !u!95 &5730850068595293389
 Animator:
   serializedVersion: 5

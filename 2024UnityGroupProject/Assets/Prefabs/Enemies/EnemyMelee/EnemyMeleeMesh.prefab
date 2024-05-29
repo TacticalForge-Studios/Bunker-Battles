@@ -161,7 +161,7 @@ MonoBehaviour:
   headPos: {fileID: 5522697672580891511}
   HP: 10
   viewAngle: 90
-  faceTargetSpeed: 8
+  faceTargetSpeed: 15
   animSpeedTrans: 5
   roamDist: 15
   roamTimer: 3
