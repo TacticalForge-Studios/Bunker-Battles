@@ -17,6 +17,8 @@ public class gameManager : MonoBehaviour
 
     public Image playerHPBar;
 
+    public GameObject checkpointPopUp;
+
     public Image playerStaminaBar;
 
     public Image playerXPBar;
@@ -28,9 +30,9 @@ public class gameManager : MonoBehaviour
     public TMP_Text ammoCurrText;
     public TMP_Text ammoMaxText;
 
+    public GameObject playerSpawnPos;
     public GameObject playerFlashDamage;
 
-    
     public playerController playerScript;
    
     public bool isPaused;
@@ -42,6 +44,7 @@ public class gameManager : MonoBehaviour
         instance = this;
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
+        playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
     }
 
     // Update is called once per frame
