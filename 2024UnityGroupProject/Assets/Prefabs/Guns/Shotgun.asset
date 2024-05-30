@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunModel: {fileID: 4205521026231025682, guid: f7a69565ab2ff984789da792b0969f4b, type: 3}
   shootDamage: 5
-  shootRate: 3
+  shootRate: 2
   shootDist: 30
-  ammoCurrent: 3
+  ammoCurrent: 1
   ammoMax: 5
   hitEffect: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}
   shootSound: {fileID: 8300000, guid: 7c07c296e12f55645b702a8e38178628, type: 3}

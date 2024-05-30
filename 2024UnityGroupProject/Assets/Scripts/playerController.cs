@@ -57,8 +57,6 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
         origSpeed = speed;
 
         currentStamina = maxStamina;
-        updatePlayerUI();
-
         spawnPlayer();
 
     }
