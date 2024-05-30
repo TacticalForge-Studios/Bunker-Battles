@@ -64,6 +64,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
            Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
            gunSelect();
            movement();
+           updatePlayerUI();
         }
     }
 
