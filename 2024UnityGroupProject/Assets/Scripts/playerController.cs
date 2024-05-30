@@ -48,12 +48,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     void Start()
     {
         HPOrig = HP;
-<<<<<<< Updated upstream
+
         currentStamina = maxStamina;
         updatePlayerUI();
-=======
+
         spawnPlayer();
->>>>>>> Stashed changes
+
     }
 
     // Update is called once per frame
