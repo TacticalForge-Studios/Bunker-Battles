@@ -23,26 +23,27 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip[] audJump;
-    [Range (0,1)] [SerializeField] float audJumpVol;
+    [Range(0, 1)][SerializeField] float audJumpVol;
 
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
     public ParticleSystem hitEffect;
     public ParticleSystem hitEffectBlood;
-    
+
 
     Vector3 moveDir;
     Vector3 playerVel;
 
     int jumpCount;
     int HPOrig;
-    int maxStamina = 75;
-    int currentStamina;
-    int staminaMod;
-    int staminaRegen;
+    float maxStamina = 100.0f;
+    float currentStamina;
+    float staminaDrain = 25.0f;
+    float staminaRegen = 25.0f;
     int selectedGun;
 
     bool isShooting;
+    bool isSprinting;
 
     // Start is called before the first frame update
     void Start()
@@ -59,19 +60,39 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     // Update is called once per frame
     void Update()
     {
-        if (!gameManager.instance.isPaused) 
-        { 
-           Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
-           gunSelect();
-           movement();
-           //updatePlayerUI();
-        }
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+        gunSelect();
+        movement();
+
     }
 
     void movement()
     {
         sprint();
-        
+
+        if (isSprinting)
+        {
+            currentStamina -= staminaDrain * Time.deltaTime;
+            gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
+            updatePlayerUI();
+
+
+
+        }
+        else if (!isSprinting && currentStamina < maxStamina - 0.01f)
+        {
+            currentStamina += staminaRegen * Time.deltaTime;
+            gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
+            updatePlayerUI();
+        }
+        if (currentStamina <= 0)
+        {
+            isSprinting = false;
+
+        }
+
+
+
         if (Input.GetButton("Fire1") && gunList.Count > 0 && gunList[selectedGun].ammoCurrent > 0 && !isShooting)
         {
             StartCoroutine(Shoot());
@@ -106,41 +127,48 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     {
         if (Input.GetButtonDown("Sprint"))
         {
+            isSprinting = true;
             speed *= sprintMod;
 
-           // while (currentStamina >= 0)
+
+
+            // while (currentStamina >= 0)
             //{
-               //if (Input.GetButtonUp("Sprint"))
-               //{
-               //     break;
-               //}
-                currentStamina -= staminaMod;
-                updatePlayerUI();
+            //if (Input.GetButtonUp("Sprint"))
+            //{
+            //     break;
             //}
+            
         }
         else if (Input.GetButtonUp("Sprint"))
         {
+
+            isSprinting = false;
             speed /= sprintMod;
 
             //while(true)
             //{
-                currentStamina += staminaRegen;
+            currentStamina += staminaRegen;
 
-                if(currentStamina >= maxStamina)
-                {
-                    currentStamina = maxStamina;
-                   // break;
-                }
-                updatePlayerUI();
+            if (currentStamina >= maxStamina)
+            {
+                currentStamina = maxStamina;
+                // break;
+            }
+            updatePlayerUI();
             //}
         }
+
+        
+
+
     }
 
     IEnumerator Shoot()
     {
         isShooting = true;
 
-        
+
 
         aud.PlayOneShot(gunList[selectedGun].shootSound, gunList[selectedGun].shootVolume);
 
@@ -163,7 +191,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
             }
             else
             {
-                
+
                 Instantiate(hitEffect, hit.point, Quaternion.identity);
             }
 
@@ -197,7 +225,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     public void Heal(int amount)
     {
         HP += amount;
-        
+
         if (HP > HPOrig)
         {
             HP = HPOrig;
