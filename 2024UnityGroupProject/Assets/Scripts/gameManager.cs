@@ -13,6 +13,7 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
+    [SerializeField] GameObject menuLevelUp;
 
 
     public Image playerHPBar;
@@ -101,5 +102,12 @@ public class gameManager : MonoBehaviour
         statePause();
         menuActive = menuLose;
         menuActive.SetActive(isPaused);
+    }
+
+    public void LevelUp(int lvl)
+    {
+        statePause();
+        menuActive = menuLevelUp;
+        menuActive.SetActive(menuLevelUp);
     }
 }

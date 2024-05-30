@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class playerController : MonoBehaviour, IDamage, medkitHeal
+public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
 {
     [SerializeField] CharacterController controller;
     [SerializeField] GameObject gunModel;
@@ -37,6 +37,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
     int jumpCount;
     int HPOrig;
+    int xp;
+    float maxXP = 100;
+    int currentLvl = 1;
+    float xpModifier = 1.5f;
     float maxStamina = 100.0f;
     float currentStamina;
     float staminaDrain = 25.0f;
@@ -231,6 +235,16 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
     }
 
+    public void giveXP(int amount)
+    {
+        xp += amount;
+        updatePlayerUI();
+        if(xp >= maxXP)
+        {
+            LevelUP((int)maxXP);
+        }
+    }
+
     IEnumerator flashDamage()
     {
         gameManager.instance.playerFlashDamage.SetActive(true);
@@ -242,6 +256,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
         gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
+        gameManager.instance.playerXPBar.fillAmount = xp / maxXP;
     }
 
     public void spawnPlayer()
@@ -305,6 +320,41 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         gunModel.GetComponent<MeshRenderer>().sharedMaterial = gunList[selectedGun].gunModel.GetComponent<MeshRenderer>().sharedMaterial;
     }
 
+    void setXPMax(float xp)
+    {
+        maxXP = xp;
+    }
+
+    public float LevelUP(int currentMaxXP)
+    {
+        float newXPMax = 0;
+        currentLvl++;
+        if (xp > maxXP)
+        {
+            int temp = xp - (int)maxXP;
+            xp = temp;
+        }
+        newXPMax = currentMaxXP * xpModifier;
+        setXPMax(newXPMax);
+        gameManager.instance.LevelUp(currentLvl);
+        
+        return newXPMax;
+    }
+
+    public float getStaminaMax()
+    {
+        return maxStamina;
+    }
+
+    public void setHP(int health)
+    {
+        HPOrig = health;
+    }
+
+    public void setStamina(float stamina)
+    {
+        maxStamina = stamina;
+    }
 
 
 }

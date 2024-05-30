@@ -155,6 +155,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
         if (HP <= 0)
         {
             gameManager.instance.UpdateGameGoal(-1);
+            gameManager.instance.playerScript.giveXP(50);
             Destroy(gameObject);
         }
     }
