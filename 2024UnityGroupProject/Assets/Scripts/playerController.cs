@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class playerController : MonoBehaviour, IDamage, medkitHeal
 {
@@ -47,16 +48,23 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     void Start()
     {
         HPOrig = HP;
+<<<<<<< Updated upstream
         currentStamina = maxStamina;
         updatePlayerUI();
+=======
+        spawnPlayer();
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
-        gunSelect();
-        movement();
+        if (!gameManager.instance.isPaused) 
+        { 
+           Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+           gunSelect();
+           movement();
+        }
     }
 
     void movement()
@@ -208,6 +216,16 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
         gameManager.instance.playerStaminaBar.fillAmount = (float)currentStamina / maxStamina;
+    }
+
+    public void spawnPlayer()
+    {
+        HP = HPOrig;
+        updatePlayerUI();
+
+        controller.enabled = false;
+        transform.position = gameManager.instance.playerSpawnPos.transform.position;
+        controller.enabled = true;
     }
 
     public int GetHP()
