@@ -18,6 +18,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     [SerializeField] int shootDamage;
     [SerializeField] int shootDist;
     [SerializeField] float shootRate;
+    [SerializeField] GameObject muzzleFlash;
 
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
@@ -125,6 +126,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
         gunList[selectedGun].ammoCurrent--;
 
+        StartCoroutine(flashMuzzle());
+
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDist))
         {
@@ -147,6 +150,13 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
+    }
+
+    IEnumerator flashMuzzle()
+    {
+        muzzleFlash.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        muzzleFlash.SetActive(false);
     }
 
     public void takeDamage(int amount)
