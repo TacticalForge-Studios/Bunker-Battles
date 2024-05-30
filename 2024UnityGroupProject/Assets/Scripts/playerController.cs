@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
     [SerializeField] int HP;
     [SerializeField] int speed;
+    int origSpeed;
     [SerializeField] int sprintMod;
     [SerializeField] int jumpMax;
     [SerializeField] int jumpSpeed;
@@ -43,12 +44,13 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     int selectedGun;
 
     bool isShooting;
-    bool isSprinting;
+    bool isSprinting = false;
 
     // Start is called before the first frame update
     void Start()
     {
         HPOrig = HP;
+        origSpeed = speed;
 
         currentStamina = maxStamina;
         updatePlayerUI();
@@ -73,16 +75,20 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         if (isSprinting)
         {
             currentStamina -= staminaDrain * Time.deltaTime;
-            gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
+            
             updatePlayerUI();
 
 
 
         }
-        else if (!isSprinting && currentStamina < maxStamina - 0.01f)
+        else if (!isSprinting && currentStamina < maxStamina)
         {
             currentStamina += staminaRegen * Time.deltaTime;
-            gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
+            if(currentStamina >= maxStamina)
+            {
+                currentStamina = maxStamina;
+                updatePlayerUI();
+            }
             updatePlayerUI();
         }
         if (currentStamina <= 0)
@@ -125,42 +131,33 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
     void sprint()
     {
+        
+
         if (Input.GetButtonDown("Sprint"))
         {
             isSprinting = true;
             speed *= sprintMod;
 
 
+            if(currentStamina <= 0)
+            {
+                isSprinting = false;
+            }
 
-            // while (currentStamina >= 0)
-            //{
-            //if (Input.GetButtonUp("Sprint"))
-            //{
-            //     break;
-            //}
+           
             
         }
-        else if (Input.GetButtonUp("Sprint"))
+        else if (Input.GetButtonUp("Sprint") || !isSprinting)
         {
-
             isSprinting = false;
-            speed /= sprintMod;
-
-            //while(true)
-            //{
-            currentStamina += staminaRegen;
+            speed = origSpeed;
 
             if (currentStamina >= maxStamina)
             {
                 currentStamina = maxStamina;
-                // break;
             }
             updatePlayerUI();
-            //}
         }
-
-        
-
 
     }
 
@@ -244,7 +241,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
-        gameManager.instance.playerStaminaBar.fillAmount = (float)currentStamina / maxStamina;
+        gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
     }
 
     public void spawnPlayer()
