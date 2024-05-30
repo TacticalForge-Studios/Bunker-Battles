@@ -20,6 +20,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     [SerializeField] float shootRate;
     [SerializeField] GameObject muzzleFlash;
 
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip[] audJump;
+    [Range (0,1)] [SerializeField] float audJumpVol;
+
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
     public ParticleSystem hitEffect;
@@ -78,6 +82,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
         if (Input.GetButtonDown("Jump") && jumpCount < jumpMax)
         {
+            aud.PlayOneShot(audJump[Random.Range(0, audJump.Length)], audJumpVol);
             jumpCount++;
             playerVel.y = jumpSpeed;
         }
@@ -123,6 +128,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     IEnumerator Shoot()
     {
         isShooting = true;
+
+        aud.PlayOneShot(gunList[selectedGun].shootSound, gunList[selectedGun].shootVolume);
 
         gunList[selectedGun].ammoCurrent--;
 
