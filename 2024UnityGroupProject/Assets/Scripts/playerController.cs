@@ -298,6 +298,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     }
     public void changeGun()
     {
+        gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
+        gameManager.instance.ammoMaxText.text = gunList[selectedGun].ammoMax.ToString("F0");
 
         shootDamage = gunList[selectedGun].shootDamage;
         shootDist = gunList[selectedGun].shootDist;
