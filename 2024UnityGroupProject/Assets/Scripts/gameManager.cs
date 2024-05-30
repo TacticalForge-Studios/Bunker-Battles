@@ -25,6 +25,8 @@ public class gameManager : MonoBehaviour
     
 
     [SerializeField] TMP_Text enemyCountText;
+    public TMP_Text ammoCurrText;
+    public TMP_Text ammoMaxText;
 
     public GameObject playerFlashDamage;
 

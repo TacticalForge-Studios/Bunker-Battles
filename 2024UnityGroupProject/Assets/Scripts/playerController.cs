@@ -47,6 +47,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     void Start()
     {
         HPOrig = HP;
+        currentStamina = maxStamina;
         updatePlayerUI();
     }
 
@@ -70,6 +71,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         if (Input.GetButtonDown("Reload"))
         {
             gunList[selectedGun].ammoCurrent = gunList[selectedGun].ammoMax;
+            gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
         }
 
         if (controller.isGrounded)
@@ -129,9 +131,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
     {
         isShooting = true;
 
+        
+
         aud.PlayOneShot(gunList[selectedGun].shootSound, gunList[selectedGun].shootVolume);
 
         gunList[selectedGun].ammoCurrent--;
+        gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
 
         StartCoroutine(flashMuzzle());
 
@@ -221,6 +226,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
 
         selectedGun = gunList.Count - 1;
 
+        gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
+        gameManager.instance.ammoMaxText.text = gunList[selectedGun].ammoMax.ToString("F0");
+
         shootDamage = gun.shootDamage;
         shootDist = gun.shootDist;
         shootRate = gun.shootRate;
@@ -250,6 +258,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal
         gunModel.GetComponent<MeshFilter>().sharedMesh = gunList[selectedGun].gunModel.GetComponent<MeshFilter>().sharedMesh;
         gunModel.GetComponent<MeshRenderer>().sharedMaterial = gunList[selectedGun].gunModel.GetComponent<MeshRenderer>().sharedMaterial;
     }
+
+
 
 }
 
