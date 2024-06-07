@@ -182,9 +182,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
             //Debug.Log(hit.transform.name);
 
             IDamage dmg = hit.collider.GetComponent<IDamage>();
+            
 
             if (hit.transform != transform && dmg != null)
             {
+                //Debug.Log(hit.transform.tag);
+                //if (hit.transform.CompareTag("Head"))
+                //{
+                //    shootDamage *= 2;
+                //    dmg.takeDamage(shootDamage);
+                //}
+
                 dmg.takeDamage(shootDamage);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
             }
@@ -354,6 +362,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
         maxStamina = stamina;
     }
 
+    public int getShootDamage()
+    {
+        return shootDamage;
+    }
 
 }
 

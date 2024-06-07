@@ -103,7 +103,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, playerDir.y + 1, playerDir.z), transform.forward);
 
         
-        Debug.Log(angleToPlayer);
+        //Debug.Log(angleToPlayer);
         Debug.DrawRay(headPos.position, new Vector3(playerDir.x, playerDir.y + 1, playerDir.z));
 
         RaycastHit hit;
@@ -226,5 +226,18 @@ public class EnemyAI : MonoBehaviour, IDamage
         return HP;
     }
 
+    //public bool enemyHead(Transform hitPOS)
+    //{
+        
+
+    //    if (hitPOS == )
+    //    {
+    //        return true;
+    //    }
+    //    else
+    //    {
+    //        return false;
+    //    }
+    //}
 
 }
