@@ -20,7 +20,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
     [SerializeField] int shootDamage;
     [SerializeField] int shootDist;
     [SerializeField] float shootRate;
-    [SerializeField] GameObject muzzleFlash;
+    [SerializeField] GameObject muzzleFlashPistol;
+    [SerializeField] GameObject muzzleFlashRifle;
+    [SerializeField] GameObject muzzleFlashShotgun;
 
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip[] audJump;
@@ -64,9 +66,13 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
-        gunSelect();
-        movement();
+        if (!gameManager.instance.isPaused)
+        {
+            Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+            gunSelect();
+            movement();
+        }
+        
 
     }
 
@@ -210,9 +216,26 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
 
     IEnumerator flashMuzzle()
     {
-        muzzleFlash.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        muzzleFlash.SetActive(false);
+        if (gunList[selectedGun].gunModel.CompareTag("Pistol"))
+        {
+            muzzleFlashPistol.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            muzzleFlashPistol.SetActive(false);
+        }
+        else if(gunList[selectedGun].gunModel.CompareTag("Rifle"))
+        {
+            muzzleFlashRifle.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            muzzleFlashRifle.SetActive(false);
+        }
+        else if (gunList[selectedGun].gunModel.CompareTag("Shotgun"))
+        {
+            muzzleFlashShotgun.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            muzzleFlashShotgun.SetActive(false);
+        }
+
+
     }
 
     public void takeDamage(int amount)

@@ -424,15 +424,15 @@ PrefabInstance:
     - target: {fileID: 4979998388507477605, guid: 405cfc69ac732dc4ea6d28b78a1a824d, type: 3}
       propertyPath: objectToSpawn.Array.data[0]
       value: 
-      objectReference: {fileID: 3803283696378430336, guid: 5a91541a15c19fe46b1f916527ef1e3f, type: 3}
+      objectReference: {fileID: 2298626201031262534, guid: 9a29449278d995f42ac1ad838474b86d, type: 3}
     - target: {fileID: 4979998388507477605, guid: 405cfc69ac732dc4ea6d28b78a1a824d, type: 3}
       propertyPath: objectToSpawn.Array.data[1]
       value: 
-      objectReference: {fileID: 3924660354034314595, guid: 80eca00d3b25a60418546f01a29c0ef4, type: 3}
+      objectReference: {fileID: 2691483955081196666, guid: 9a916aa8283029c4daf6e57ad9aa41a4, type: 3}
     - target: {fileID: 4979998388507477605, guid: 405cfc69ac732dc4ea6d28b78a1a824d, type: 3}
       propertyPath: objectToSpawn.Array.data[2]
       value: 
-      objectReference: {fileID: 310561089346394714, guid: b92518708e759f6499dc25084f875ca0, type: 3}
+      objectReference: {fileID: 1546654418768420667, guid: 061a7b102927efe4cacac1f0eb2e51e1, type: 3}
     - target: {fileID: 8328977873523546993, guid: 405cfc69ac732dc4ea6d28b78a1a824d, type: 3}
       propertyPath: m_Radius
       value: 3.09
@@ -1411,6 +1411,18 @@ PrefabInstance:
       propertyPath: spawnPos.Array.data[4]
       value: 
       objectReference: {fileID: 554642150}
+    - target: {fileID: 7135445273967120528, guid: 7a013ed013630d341a1cd9bcf661635e, type: 3}
+      propertyPath: objectToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 2691483955081196666, guid: 9a916aa8283029c4daf6e57ad9aa41a4, type: 3}
+    - target: {fileID: 7135445273967120528, guid: 7a013ed013630d341a1cd9bcf661635e, type: 3}
+      propertyPath: objectToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 2298626201031262534, guid: 9a29449278d995f42ac1ad838474b86d, type: 3}
+    - target: {fileID: 7135445273967120528, guid: 7a013ed013630d341a1cd9bcf661635e, type: 3}
+      propertyPath: objectToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 1546654418768420667, guid: 061a7b102927efe4cacac1f0eb2e51e1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2447221525596250454, guid: 7a013ed013630d341a1cd9bcf661635e, type: 3}
@@ -2465,6 +2477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner(Sniper) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4897970485907070390, guid: e5c279135eec4a745a1099467a07e57d, type: 3}
+      propertyPath: objectToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 2298626201031262534, guid: 9a29449278d995f42ac1ad838474b86d, type: 3}
     - target: {fileID: 7002649829448742558, guid: e5c279135eec4a745a1099467a07e57d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.75

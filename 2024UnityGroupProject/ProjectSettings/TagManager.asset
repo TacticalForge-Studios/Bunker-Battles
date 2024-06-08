@@ -7,6 +7,9 @@ TagManager:
   - Player Spawn Pos
   - Head
   - Enemy
+  - Pistol
+  - Rifle
+  - Shotgun
   layers:
   - Default
   - TransparentFX

@@ -20,6 +20,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     [SerializeField] int animSpeedTrans;
     [SerializeField] int roamDist;
     [SerializeField] int roamTimer;
+    [SerializeField] GameObject EnemyUI;
 
     [SerializeField] float hitRate;
 
@@ -103,11 +104,10 @@ public class MeleeEnemy : MonoBehaviour, IDamage
             {
                 agent.stoppingDistance = stoppingDistOrig;
                 agent.SetDestination(gameManager.instance.player.transform.position);
-
+                
 
                 if (!isHitting)
                 {
-                    
                     StartCoroutine(melee());
                 }
                 if (agent.remainingDistance <= agent.stoppingDistance)
@@ -148,54 +148,68 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
+        EnemyUI.SetActive(true);
         UpadateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
-        StartCoroutine(flashRed(model.material.color));
+        anim.SetTrigger("TakeDamage");
+        
 
         if (HP <= 0)
         {
-            gameManager.instance.UpdateGameGoal(-1);
+            
             gameManager.instance.playerScript.giveXP(50);
-            Destroy(gameObject);
+            Vector3 dead = Vector3.zero;
+            agent.velocity = dead;
+            agent.acceleration = 0;
+            EnemyUI.SetActive(false);
+            anim.SetTrigger("Death");
+            
         }
     }
 
-    IEnumerator flashRed(Color color)
+    public void death()
     {
-
-
-        if (model.material.color == Color.blue)
-        {
-            model.material.color = Color.red;
-
-            yield return new WaitForSeconds(0.1f);
-
-            model.material.color = Color.blue;
-        }
-        else if (model.material.color == Color.white)
-        {
-            model.material.color = Color.red;
-
-            yield return new WaitForSeconds(0.1f);
-
-            model.material.color = Color.white;
-        }
-        else if (model.material.color == Color.black)
-        {
-            model.material.color = Color.red;
-
-            yield return new WaitForSeconds(0.1f);
-
-            model.material.color = Color.black;
-        }
-
+        Destroy(gameObject);
+        gameManager.instance.UpdateGameGoal(-1);
     }
+
+    //IEnumerator flashRed(Color color)
+    //{
+
+
+    //    if (model.material.color == Color.blue)
+    //    {
+    //        model.material.color = Color.red;
+
+    //        yield return new WaitForSeconds(0.1f);
+
+    //        model.material.color = Color.blue;
+    //    }
+    //    else if (model.material.color == Color.white)
+    //    {
+    //        model.material.color = Color.red;
+
+    //        yield return new WaitForSeconds(0.1f);
+
+    //        model.material.color = Color.white;
+    //    }
+    //    else if (model.material.color == Color.black)
+    //    {
+    //        model.material.color = Color.red;
+
+    //        yield return new WaitForSeconds(0.1f);
+
+    //        model.material.color = Color.black;
+    //    }
+
+    //}
 
     IEnumerator melee()
     {
         isHitting = true;
         anim.SetTrigger("Melee");
         yield return new WaitForSeconds(hitRate);
+        
         isHitting = false;
     }
 

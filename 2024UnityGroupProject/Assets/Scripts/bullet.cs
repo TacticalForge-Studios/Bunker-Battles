@@ -19,13 +19,11 @@ public class bullet : MonoBehaviour
 
         if (transform.position.y < gameManager.instance.player.transform.position.y)
         {
-            speed = 2;
-            rb.velocity = (playerDir - transform.position) * speed;
+            rb.velocity = (playerDir - transform.position).normalized * speed;
         }
         else if (transform.position.y > gameManager.instance.player.transform.position.y)
-        {
-            speed = 2;
-            rb.velocity = (playerDir - transform.position) * speed;
+        { 
+            rb.velocity = (playerDir - transform.position).normalized * speed;
         }
         else
         {
