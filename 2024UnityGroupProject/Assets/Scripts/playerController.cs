@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
+public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, ammoResupply
 {
     [SerializeField] CharacterController controller;
     [SerializeField] GameObject gunModel;
@@ -138,8 +138,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
                 {
                     gunList[selectedGun].totalAmmoLeft = 0;
                 }
-                gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
-                gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
+                
                 updatePlayerUI();
             }
             else
@@ -335,6 +334,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
                 lowAmmo.SetActive(false);
                 noAmmo.SetActive(true);
             }
+            gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
+            gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
         }
         
 
@@ -348,6 +349,27 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
         controller.enabled = false;
         transform.position = gameManager.instance.playerSpawnPos.transform.position;
         controller.enabled = true;
+    }
+
+    public void Resupply(int amount)
+    {
+        gunList[selectedGun].totalAmmoLeft += amount;
+
+        if (gunList[selectedGun].totalAmmoLeft > gunList[selectedGun].ammoMax)
+        {
+            gunList[selectedGun].totalAmmoLeft = gunList[selectedGun].ammoMax;
+        }
+        updatePlayerUI();
+    }
+
+    public int getTotalAmmo()
+    {
+        return gunList[selectedGun].totalAmmoLeft;
+    }
+
+    public int getAmmoMax()
+    {
+        return gunList[selectedGun].ammoMax;
     }
 
     public int GetHP()
