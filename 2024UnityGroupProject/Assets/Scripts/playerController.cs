@@ -23,6 +23,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
     [SerializeField] GameObject muzzleFlashPistol;
     [SerializeField] GameObject muzzleFlashRifle;
     [SerializeField] GameObject muzzleFlashShotgun;
+    [SerializeField] GameObject lowAmmo;
+    [SerializeField] GameObject noAmmo;
 
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip[] audJump;
@@ -114,8 +116,39 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
 
         if (Input.GetButtonDown("Reload"))
         {
-            gunList[selectedGun].ammoCurrent = gunList[selectedGun].ammoMax;
-            gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
+            if (gunList[selectedGun].totalAmmoLeft > 0)
+            {
+                if (gunList[selectedGun].totalAmmoLeft <= gunList[selectedGun].ammoMax / 2)
+                {
+                    lowAmmo.SetActive(true);
+                }
+
+                if (gunList[selectedGun].ammoCurrent + gunList[selectedGun].totalAmmoLeft < gunList[selectedGun].magCapacity)
+                {
+                    int roundsShot = gunList[selectedGun].magCapacity - gunList[selectedGun].ammoCurrent;
+                    gunList[selectedGun].ammoCurrent = gunList[selectedGun].ammoCurrent + gunList[selectedGun].totalAmmoLeft;
+                    gunList[selectedGun].totalAmmoLeft = gunList[selectedGun].totalAmmoLeft - roundsShot;
+                }
+                else
+                {
+                    int roundsShot = gunList[selectedGun].magCapacity - gunList[selectedGun].ammoCurrent;
+                    gunList[selectedGun].ammoCurrent = gunList[selectedGun].magCapacity;
+                    gunList[selectedGun].totalAmmoLeft = gunList[selectedGun].totalAmmoLeft - roundsShot;
+                }
+
+                
+                if (gunList[selectedGun].totalAmmoLeft < 0)
+                {
+                    gunList[selectedGun].totalAmmoLeft = 0;
+                }
+                gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
+                gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
+            }
+            else
+            {
+                updatePlayerUI();
+            }
+            
         }
 
         if (controller.isGrounded)
@@ -286,6 +319,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
         gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
         gameManager.instance.playerXPBar.fillAmount = xp / maxXP;
+
+        if (gunList.Capacity != 0)
+        {
+            if (gunList[selectedGun].totalAmmoLeft <= 0 && gunList[selectedGun].ammoCurrent == 0)
+            {
+                lowAmmo.SetActive(false);
+                noAmmo.SetActive(true);
+            }
+        }
+        
+
     }
 
     public void spawnPlayer()
@@ -315,7 +359,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
         selectedGun = gunList.Count - 1;
 
         gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
-        gameManager.instance.ammoMaxText.text = gunList[selectedGun].ammoMax.ToString("F0");
+        gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
 
         shootDamage = gun.shootDamage;
         shootDist = gun.shootDist;
@@ -340,7 +384,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
     public void changeGun()
     {
         gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
-        gameManager.instance.ammoMaxText.text = gunList[selectedGun].ammoMax.ToString("F0");
+        gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
 
         shootDamage = gunList[selectedGun].shootDamage;
         shootDist = gunList[selectedGun].shootDist;
