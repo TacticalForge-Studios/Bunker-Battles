@@ -182,6 +182,7 @@ public class EnemyAI : MonoBehaviour, IDamage
                 shootRate = 0;
                 agent.velocity = Vector3.zero;
                 agent.acceleration = 0;
+                
                 anim.SetTrigger("Death");
                 EnemyUI.SetActive(false);
                 isDead = true;
