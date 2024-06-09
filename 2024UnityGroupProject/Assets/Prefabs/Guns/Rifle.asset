@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunModel: {fileID: 4311248730837266121, guid: c20daf91d2bce304c85fec03f5fafd3b, type: 3}
   shootDamage: 3
-  shootRate: 0.8
+  shootRate: 0.5
   shootDist: 80
-  ammoCurrent: 10
-  ammoMax: 10
+  ammoCurrent: 0
+  ammoMax: 90
+  totalAmmoLeft: 0
+  magCapacity: 15
   hitEffect: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}
   shootSound: {fileID: 8300000, guid: b9d65af19fbdf0a448eb44089a22f0ce, type: 3}
   shootVolume: 0.5

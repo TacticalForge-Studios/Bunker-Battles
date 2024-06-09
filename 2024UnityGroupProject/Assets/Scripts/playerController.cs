@@ -118,10 +118,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
         {
             if (gunList[selectedGun].totalAmmoLeft > 0)
             {
-                if (gunList[selectedGun].totalAmmoLeft <= gunList[selectedGun].ammoMax / 2)
-                {
-                    lowAmmo.SetActive(true);
-                }
+                
 
                 if (gunList[selectedGun].ammoCurrent + gunList[selectedGun].totalAmmoLeft < gunList[selectedGun].magCapacity)
                 {
@@ -143,6 +140,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
                 }
                 gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
                 gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
+                updatePlayerUI();
             }
             else
             {
@@ -322,6 +320,16 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience
 
         if (gunList.Capacity != 0)
         {
+            if (gunList[selectedGun].totalAmmoLeft <= gunList[selectedGun].ammoMax / 2)
+            {
+                noAmmo.SetActive(false);
+                lowAmmo.SetActive(true);
+            }
+            else
+            {
+                noAmmo.SetActive(false);
+                lowAmmo.SetActive(false);
+            }
             if (gunList[selectedGun].totalAmmoLeft <= 0 && gunList[selectedGun].ammoCurrent == 0)
             {
                 lowAmmo.SetActive(false);
