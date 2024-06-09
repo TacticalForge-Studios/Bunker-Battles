@@ -970,6 +970,7 @@ MonoBehaviour:
   roamDist: 5
   roamTimer: 3
   EnemyUI: {fileID: 8001880789812429269}
+  ItemToSpawn: {fileID: 5784493279690319279, guid: 51dbbb57effb5984d9bc4501699c4439, type: 3}
   bullet: {fileID: 6610430800471585784, guid: 79868086602e7204084e1b38937c5da6, type: 3}
   shootRate: 0.5
   enemyHPBarBack: {fileID: 438125692101393237}

@@ -613,6 +613,8 @@ MonoBehaviour:
   muzzleFlashPistol: {fileID: 7363659392546886840}
   muzzleFlashRifle: {fileID: 3121254938318647660}
   muzzleFlashShotgun: {fileID: 2028420514786061105}
+  lowAmmo: {fileID: 0}
+  noAmmo: {fileID: 0}
   aud: {fileID: 1650678317751128882}
   audJump:
   - {fileID: 8300000, guid: 7b1830415b2f52e4e9c4a113a45f5a24, type: 3}

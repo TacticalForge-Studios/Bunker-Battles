@@ -14,6 +14,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     [SerializeField] Renderer model;
     [SerializeField] Transform shootPos;
     [SerializeField] Transform headPos;
+    [SerializeField] Transform itemSpawnPos;
     
 
     [SerializeField] int HP;
@@ -23,6 +24,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     [SerializeField] int roamDist;
     [SerializeField] int roamTimer;
     [SerializeField] GameObject EnemyUI;
+    [SerializeField] GameObject ItemToSpawn;
 
     [SerializeField] GameObject bullet;
     [SerializeField] float shootRate;
@@ -173,6 +175,7 @@ public class EnemyAI : MonoBehaviour, IDamage
 
         if(HP <= 0)
         {
+            Instantiate(ItemToSpawn, itemSpawnPos.position, transform.rotation);
             if (!isDead)
             {
                 gameManager.instance.playerScript.giveXP(60);
@@ -182,6 +185,7 @@ public class EnemyAI : MonoBehaviour, IDamage
                 anim.SetTrigger("Death");
                 EnemyUI.SetActive(false);
                 isDead = true;
+                
             }
             
             
@@ -191,8 +195,10 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     public void death()
     {
-            Destroy(gameObject);
-            gameManager.instance.UpdateGameGoal(-1);
+        
+        Destroy(gameObject);
+        gameManager.instance.UpdateGameGoal(-1);
+        
         
     }
 

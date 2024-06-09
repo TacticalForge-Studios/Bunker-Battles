@@ -8,21 +8,33 @@ public class ammoCan : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        int tempTotalAmmoAmount = gameManager.instance.playerScript.getTotalAmmo();
-        int ammoMax = gameManager.instance.playerScript.getAmmoMax();
-
-        if(tempTotalAmmoAmount == ammoMax)
+        bool hasGun = gameManager.instance.playerScript.checkGunList();
+        if (!hasGun)
         {
             return;
         }
+        else
+        {
+            int tempTotalAmmoAmount = gameManager.instance.playerScript.getTotalAmmo();
+            int ammoMax = gameManager.instance.playerScript.getAmmoMax();
 
-        ammoResupply toResupply = other.gameObject.GetComponent<ammoResupply>();
+            if (tempTotalAmmoAmount == ammoMax)
+            {
+                return;
+            }
 
-        if(toResupply != null)
-        { 
-            toResupply.Resupply(resupplyAmount);
-            Destroy(gameObject);
+
+
+            ammoResupply toResupply = other.gameObject.GetComponent<ammoResupply>();
+
+            if (toResupply != null)
+            {
+                toResupply.Resupply(resupplyAmount);
+                Destroy(gameObject);
+            }
+
         }
+
 
 
     }

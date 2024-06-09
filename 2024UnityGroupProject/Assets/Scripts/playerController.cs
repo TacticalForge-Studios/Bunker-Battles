@@ -362,6 +362,18 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         updatePlayerUI();
     }
 
+    public bool checkGunList()
+    {
+        if (gunList.Count == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
     public int getTotalAmmo()
     {
         return gunList[selectedGun].totalAmmoLeft;
