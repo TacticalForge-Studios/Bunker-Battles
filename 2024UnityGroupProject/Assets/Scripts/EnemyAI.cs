@@ -36,6 +36,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     bool isShooting;
     bool playerInRange;
     bool destChosen;
+    bool isDead = false;
 
     Vector3 playerDir;
     Vector3 startingPos;
@@ -159,27 +160,40 @@ public class EnemyAI : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        EnemyUI.SetActive(true);
+        
         UpdateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
-        anim.SetTrigger("TakeDamage");
+        if (!isDead)
+        {
+            EnemyUI.SetActive(true);
+            anim.SetTrigger("TakeDamage");
+            UpdateEnemyUI();
+        }
+        
 
         if(HP <= 0)
         {
-            gameManager.instance.playerScript.giveXP(60);
-            Vector3 dead = Vector3.zero;
-            agent.velocity = dead;
-            agent.acceleration = 0;
-            anim.SetTrigger("Death");
-            EnemyUI.SetActive(false);
+            if (!isDead)
+            {
+                gameManager.instance.playerScript.giveXP(60);
+                shootRate = 0;
+                agent.velocity = Vector3.zero;
+                agent.acceleration = 0;
+                anim.SetTrigger("Death");
+                EnemyUI.SetActive(false);
+                isDead = true;
+            }
+            
+            
             
         }
     }
 
     public void death()
     {
-        Destroy(gameObject);
-        gameManager.instance.UpdateGameGoal(-1);
+            Destroy(gameObject);
+            gameManager.instance.UpdateGameGoal(-1);
+        
     }
 
     //IEnumerator flashRed(Color color)

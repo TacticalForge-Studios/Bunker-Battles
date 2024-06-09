@@ -31,6 +31,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     bool isHitting;
     bool playerInRange;
     bool destChosen;
+    bool isDead;
 
     Vector3 playerDir;
     Vector3 startingPos;
@@ -46,7 +47,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
         startingPos = transform.position;
         stoppingDistOrig = agent.stoppingDistance;
         HPOrig = HP;
-        UpadateEnemyUI();
+        UpdateEnemyUI();
         //gameManager.instance.UpdateGameGoal(1);
     }
 
@@ -148,22 +149,32 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        EnemyUI.SetActive(true);
-        UpadateEnemyUI();
+
+        UpdateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
-        anim.SetTrigger("TakeDamage");
-        
+        if (!isDead)
+        {
+            EnemyUI.SetActive(true);
+            anim.SetTrigger("TakeDamage");
+            UpdateEnemyUI();
+        }
+
 
         if (HP <= 0)
         {
-            
-            gameManager.instance.playerScript.giveXP(50);
-            Vector3 dead = Vector3.zero;
-            agent.velocity = dead;
-            agent.acceleration = 0;
-            EnemyUI.SetActive(false);
-            anim.SetTrigger("Death");
-            
+            if (!isDead)
+            {
+                gameManager.instance.playerScript.giveXP(60);
+                hitRate = 0;
+                agent.velocity = Vector3.zero;
+                agent.acceleration = 0;
+                anim.SetTrigger("Death");
+                EnemyUI.SetActive(false);
+                isDead = true;
+            }
+
+
+
         }
     }
 
@@ -213,7 +224,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
         isHitting = false;
     }
 
-    void UpadateEnemyUI()
+    void UpdateEnemyUI()
     {
         enemyHPBar.fillAmount = (float)HP / HPOrig;
     }
