@@ -1,3 +1,4 @@
+using Palmmedia.ReportGenerator.Core.Reporting.Builders;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -229,6 +230,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
             else if (hit.transform.CompareTag("Head"))
             {
                 EnemyAI enemy = hit.transform.GetComponentInParent<EnemyAI>();
+                enemy.takeDamage(shootDamage * 2);
+                Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
+            }
+            else if (hit.transform.CompareTag("MeleeHead"))
+            {
+                MeleeEnemy enemy = hit.transform.GetComponentInParent<MeleeEnemy>();
                 enemy.takeDamage(shootDamage * 2);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
             }

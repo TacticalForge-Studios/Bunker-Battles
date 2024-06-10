@@ -10,6 +10,7 @@ TagManager:
   - Pistol
   - Rifle
   - Shotgun
+  - MeleeHead
   layers:
   - Default
   - TransparentFX
