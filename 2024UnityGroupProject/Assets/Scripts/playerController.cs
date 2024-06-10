@@ -215,23 +215,24 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDist))
         {
-            //Debug.Log(hit.transform.name);
+            Debug.Log(hit.transform.name);
 
             IDamage dmg = hit.collider.GetComponent<IDamage>();
             
 
             if (hit.transform != transform && dmg != null)
             {
-                //Debug.Log(hit.transform.tag);
-                //if (hit.transform.CompareTag("Head"))
-                //{
-                //    shootDamage *= 2;
-                //    dmg.takeDamage(shootDamage);
-                //}
-
+               
                 dmg.takeDamage(shootDamage);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
             }
+            else if (hit.transform.CompareTag("Head"))
+            {
+                EnemyAI enemy = hit.transform.GetComponentInParent<EnemyAI>();
+                enemy.takeDamage(shootDamage * 2);
+                Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
+            }
+
             else
             {
 
