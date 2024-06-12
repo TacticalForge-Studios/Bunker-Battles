@@ -44,6 +44,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     Vector3 startingPos;
 
     int HPOrig;
+    int dropChance;
 
     float angleToPlayer;
     float stoppingDistOrig;
@@ -175,7 +176,13 @@ public class EnemyAI : MonoBehaviour, IDamage
 
         if(HP <= 0)
         {
-            Instantiate(ItemToSpawn, itemSpawnPos.position, transform.rotation);
+            dropChance = Random.Range(0, 100);
+
+            if(dropChance >= 50)
+            {
+                Instantiate(ItemToSpawn, itemSpawnPos.position, transform.rotation);
+            }
+            
             if (!isDead)
             {
                 gameManager.instance.playerScript.giveXP(60);
