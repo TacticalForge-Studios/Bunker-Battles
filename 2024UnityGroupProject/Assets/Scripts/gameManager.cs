@@ -18,6 +18,8 @@ public class gameManager : MonoBehaviour
 
     public Image playerHPBar;
 
+    public Image playerArmorBar;
+
     public GameObject checkpointPopUp;
 
     public Image playerStaminaBar;

@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] GameObject gunModel;
 
     [SerializeField] int HP;
+    [SerializeField] float Armor;
     [SerializeField] int speed;
     int origSpeed;
     [SerializeField] int sprintMod;
@@ -28,8 +29,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] GameObject noAmmo;
 
     [SerializeField] GameObject takingDamage;
+    [SerializeField] GameObject takingArmDamage;
     [SerializeField] GameObject lowHealth;
     [SerializeField] GameObject almostDead;
+    
 
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip[] audJump;
@@ -48,6 +51,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     int jumpCount;
     int HPOrig;
+    int ArmorOrig;
     int xp;
     float maxXP = 100;
     int currentLvl = 1;
@@ -56,15 +60,20 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     float currentStamina;
     float staminaDrain = 25.0f;
     float staminaRegen = 25.0f;
+    float armorRecharge = 2.0f;
+    float timeSinceTakenDamage;
     int selectedGun;
 
     bool isShooting;
     bool isSprinting = false;
+    bool armorBroken = false;
+    bool takenDamage = false;
 
     // Start is called before the first frame update
     void Start()
     {
         HPOrig = HP;
+        ArmorOrig = (int)Armor;
         origSpeed = speed;
 
         currentStamina = maxStamina;
@@ -81,6 +90,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
             gunSelect();
             movement();
         }
+        timeSinceTakenDamage += Time.deltaTime;
+        RechargeArmor();
         
 
     }
@@ -282,9 +293,52 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     }
 
+    void RechargeArmor()
+    {
+        
+        
+
+        if(Armor < ArmorOrig && timeSinceTakenDamage >= 5.0f)
+        {
+            Armor += armorRecharge * Time.deltaTime;
+            armorBroken = false;
+            if(Armor > ArmorOrig)
+            {
+                Armor = ArmorOrig;
+            }
+        }
+    }
+
     public void takeDamage(int amount)
     {
-        HP -= amount;
+        timeSinceTakenDamage = 0.0f;
+        float currentArmor = Armor;
+        Armor -= amount;
+        takenDamage = true;
+        if(Armor < 0)
+        {
+            Armor = 0;
+        }
+
+        if(Armor == 0)
+        {
+            if (armorBroken)
+            {
+                HP -= amount;
+            }
+            if (amount > currentArmor && !armorBroken)
+            {
+                float overDamage = (float)amount - currentArmor;
+                
+                HP -= (int)overDamage;
+           
+                armorBroken = true;
+            }
+            
+
+        }
+        
+
         updatePlayerUI();
 
         StartCoroutine(flashDamage());
@@ -320,12 +374,19 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     IEnumerator flashDamage()
     {
-        takingDamage.SetActive(true);
-
-        //gameManager.instance.playerFlashDamage.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
-        //gameManager.instance.playerFlashDamage.SetActive(false);
-        takingDamage.SetActive(false);
+        if (!armorBroken)
+        {
+            takingArmDamage.SetActive(true);
+            yield return new WaitForSeconds(0.2f);
+            takingArmDamage.SetActive(false);
+        }
+        else
+        {
+            takingDamage.SetActive(true);
+            yield return new WaitForSeconds(0.2f);
+            takingDamage.SetActive(false);
+        }
+        
     }
 
     void updatePlayerUI()
@@ -333,6 +394,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
         gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
         gameManager.instance.playerXPBar.fillAmount = xp / maxXP;
+        gameManager.instance.playerArmorBar.fillAmount = Armor / ArmorOrig;
 
         if (HP < HPOrig / 5)
         {
