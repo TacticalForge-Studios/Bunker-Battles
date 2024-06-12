@@ -323,7 +323,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         takingDamage.SetActive(true);
 
         //gameManager.instance.playerFlashDamage.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         //gameManager.instance.playerFlashDamage.SetActive(false);
         takingDamage.SetActive(false);
     }
@@ -333,6 +333,22 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
         gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
         gameManager.instance.playerXPBar.fillAmount = xp / maxXP;
+
+        if (HP < HPOrig / 5)
+        {
+            lowHealth.SetActive(false);
+            almostDead.SetActive(true);
+        }
+        else if (HP < HPOrig / 2)
+        {
+            lowHealth.SetActive(true);
+        }
+        
+        else
+        {
+            lowHealth.SetActive(false);
+            almostDead.SetActive(false);
+        }
 
         if (gunList.Capacity != 0)
         {
