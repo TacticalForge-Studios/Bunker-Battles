@@ -124,7 +124,7 @@ public class EnemyAI : MonoBehaviour, IDamage
                 {
                     StartCoroutine(shoot());
                 }
-                if (agent.remainingDistance <= agent.stoppingDistance)
+                if (agent.remainingDistance <= agent.stoppingDistance && isDead == false)
                 {
                     faceTarget();
                 }
@@ -177,6 +177,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             dropChance = Random.Range(0, 100);
+            anim.SetBool("isDead", true); 
 
             if(dropChance >= 50)
             {
@@ -190,6 +191,8 @@ public class EnemyAI : MonoBehaviour, IDamage
                 agent.velocity = Vector3.zero;
                 agent.acceleration = 0;
                 
+
+
                 anim.SetTrigger("Death");
                 EnemyUI.SetActive(false);
                 isDead = true;

@@ -27,9 +27,15 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] GameObject lowAmmo;
     [SerializeField] GameObject noAmmo;
 
+    [SerializeField] GameObject takingDamage;
+    [SerializeField] GameObject lowHealth;
+    [SerializeField] GameObject almostDead;
+
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip[] audJump;
     [Range(0, 1)][SerializeField] float audJumpVol;
+    [SerializeField] AudioClip audHeal;
+    [Range(0, 1)][SerializeField] float audHealVol;
 
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
@@ -293,7 +299,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void Heal(int amount)
     {
         HP += amount;
-
+        aud.PlayOneShot(audHeal, audJumpVol);
         if (HP > HPOrig)
         {
             HP = HPOrig;
@@ -314,9 +320,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     IEnumerator flashDamage()
     {
-        gameManager.instance.playerFlashDamage.SetActive(true);
-        yield return new WaitForSeconds(0.1f);
-        gameManager.instance.playerFlashDamage.SetActive(false);
+        takingDamage.SetActive(true);
+
+        //gameManager.instance.playerFlashDamage.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        //gameManager.instance.playerFlashDamage.SetActive(false);
+        takingDamage.SetActive(false);
     }
 
     void updatePlayerUI()
