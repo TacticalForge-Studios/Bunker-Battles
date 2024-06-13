@@ -6571,6 +6571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 3190201124393358165, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+      propertyPath: m_Name
+      value: No Ammo
+      objectReference: {fileID: 0}
     - target: {fileID: 3412399513616527045, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
       propertyPath: m_SizeDelta.x
       value: 250

@@ -2382,7 +2382,7 @@ GameObject:
   - component: {fileID: 7973628794177007007}
   - component: {fileID: 704389043467913236}
   m_Layer: 5
-  m_Name: Low Ammo
+  m_Name: No Ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
