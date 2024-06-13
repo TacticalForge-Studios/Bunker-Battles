@@ -25,8 +25,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] GameObject muzzleFlashPistol;
     [SerializeField] GameObject muzzleFlashRifle;
     [SerializeField] GameObject muzzleFlashShotgun;
+    [SerializeField] GameObject flashlight;
     [SerializeField] GameObject lowAmmo;
     [SerializeField] GameObject noAmmo;
+    
 
     [SerializeField] GameObject takingDamage;
     [SerializeField] GameObject takingArmDamage;
@@ -67,6 +69,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     bool isShooting;
     bool isSprinting = false;
     bool armorBroken = false;
+    bool flashlightOn = false;
     
 
     // Start is called before the first frame update
@@ -169,6 +172,20 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
                 updatePlayerUI();
             }
             
+        }
+
+        if(Input.GetButtonDown("Toggle Flashlight"))
+        {
+            if (flashlightOn)
+            {
+                flashlight.SetActive(false);
+                flashlightOn = false;
+            }
+            else
+            {
+                flashlight.SetActive(true);
+                flashlightOn = true;
+            }
         }
 
         if (controller.isGrounded)
