@@ -53,10 +53,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     int HPOrig;
     int ArmorOrig;
     int xp;
-    float maxXP = 100;
-    int currentLvl = 1;
+    float maxXP;
+    int currenPlayerLvl;
     float xpModifier = 1.5f;
-    float maxStamina = 100.0f;
+    float maxStamina;
     float currentStamina;
     float staminaDrain = 25.0f;
     float staminaRegen = 25.0f;
@@ -67,15 +67,20 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     bool isShooting;
     bool isSprinting = false;
     bool armorBroken = false;
-    bool takenDamage = false;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        HPOrig = HP;
-        ArmorOrig = (int)Armor;
+        HPOrig = buttonFunctions.HP;
+        ArmorOrig = (int)buttonFunctions.playerArmor;
+        maxXP = buttonFunctions.maxXP;
+        xp = buttonFunctions.xp;
+        Armor = buttonFunctions.playerArmor;
+        ArmorOrig = buttonFunctions.armorOrig;
         origSpeed = speed;
-
+        currenPlayerLvl = buttonFunctions.currentPlayerLvl;
+        maxStamina = buttonFunctions.stamina;
         currentStamina = maxStamina;
         spawnPlayer();
 
@@ -314,7 +319,6 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         timeSinceTakenDamage = 0.0f;
         float currentArmor = Armor;
         Armor -= amount;
-        takenDamage = true;
         if(Armor < 0)
         {
             Armor = 0;
@@ -370,6 +374,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         {
             LevelUP((int)maxXP);
         }
+        buttonFunctions.xp = xp;
     }
 
     IEnumerator flashDamage()
@@ -404,8 +409,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         else if (HP < HPOrig / 2)
         {
             lowHealth.SetActive(true);
+            almostDead.SetActive(false);
         }
-        
         else
         {
             lowHealth.SetActive(false);
@@ -530,7 +535,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gunModel.GetComponent<MeshRenderer>().sharedMaterial = gunList[selectedGun].gunModel.GetComponent<MeshRenderer>().sharedMaterial;
     }
 
-    void setXPMax(float xp)
+    public void setXPMax(float xp)
     {
         maxXP = xp;
     }
@@ -538,16 +543,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public float LevelUP(int currentMaxXP)
     {
         float newXPMax = 0;
-        currentLvl++;
+        currenPlayerLvl++;
         if (xp > maxXP)
         {
             int temp = xp - (int)maxXP;
             xp = temp;
+            buttonFunctions.xp = xp;
         }
         newXPMax = currentMaxXP * xpModifier;
         setXPMax(newXPMax);
-        gameManager.instance.LevelUp(currentLvl);
-        
+        gameManager.instance.LevelUp(currenPlayerLvl);
+        buttonFunctions.maxXP = newXPMax;
         return newXPMax;
     }
 
@@ -570,6 +576,32 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     {
         return shootDamage;
     }
+
+    public int getLevel()
+    {
+        return currenPlayerLvl;
+    }
+
+    public void setLvl(int lvl)
+    {
+        currenPlayerLvl = lvl;
+    }
+
+    public void setXp(int Xp)
+    {
+        xp = Xp;
+    }
+
+    public int getXp()
+    {
+        return xp;
+    }
+
+    public void setArmor(int armorOrig)
+    {
+        ArmorOrig = armorOrig;
+    }
+    
 
 }
 

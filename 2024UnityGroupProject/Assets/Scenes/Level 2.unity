@@ -574,6 +574,22 @@ PrefabInstance:
       propertyPath: lowAmmo
       value: 
       objectReference: {fileID: 2034743886}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: lowHealth
+      value: 
+      objectReference: {fileID: 1429486616}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: almostDead
+      value: 
+      objectReference: {fileID: 1429486615}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: takingDamage
+      value: 
+      objectReference: {fileID: 1429486618}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: takingArmDamage
+      value: 
+      objectReference: {fileID: 1429486617}
     - target: {fileID: 3360185070103637596, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.25
@@ -3284,6 +3300,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+--- !u!1 &1429486615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3928870837547956184, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 1429486614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429486616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 704847126711653051, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 1429486614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429486617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6960493389514270812, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 1429486614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429486618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2383900301072936005, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 1429486614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1431487440
 PrefabInstance:
   m_ObjectHideFlags: 0
