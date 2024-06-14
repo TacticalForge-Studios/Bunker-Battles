@@ -59,7 +59,12 @@ public class bullet : MonoBehaviour
 
         IDamage dmg = other.gameObject.GetComponent<IDamage>();
 
+        IDamage friendlyturret = other.gameObject.GetComponent<machineGunTurret>();
 
+        if (friendlyturret != null)
+        {
+            return;
+        }
 
         if (dmg != null)
         {
