@@ -14,10 +14,12 @@ public class buttonFunctions : MonoBehaviour
     public static int armorOrig;
     public static float maxXP;
     public static int xp;
+    public static int currency;
 
     private void Awake()
     {
         SetPlayerStats();
+        
     }
 
     private void SetPlayerStats()
@@ -87,7 +89,7 @@ public class buttonFunctions : MonoBehaviour
     }
 
     public void NextLevel()
-    {
+    { 
         gameManager.instance.statePause();
         //int hp = gameManager.instance.playerScript.GetHPOrig();
         //float stamina = gameManager.instance.playerScript.getStaminaMax();
@@ -100,6 +102,8 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.playerScript.setLvl(currentPlayerLvl);
         gameManager.instance.playerScript.setXp(xp);
         gameManager.instance.playerScript.setXPMax(maxXP);
+        
+
     }
 
 }

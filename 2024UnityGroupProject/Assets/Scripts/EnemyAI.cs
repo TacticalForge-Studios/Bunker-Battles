@@ -177,7 +177,8 @@ public class EnemyAI : MonoBehaviour, IDamage
         if(HP <= 0)
         {
             dropChance = Random.Range(0, 100);
-            anim.SetBool("isDead", true); 
+            anim.SetBool("isDead", true);
+            
 
             if(dropChance >= 50)
             {
@@ -187,6 +188,7 @@ public class EnemyAI : MonoBehaviour, IDamage
             if (!isDead)
             {
                 gameManager.instance.playerScript.giveXP(60);
+                gameManager.instance.UpdateCurrencyText(10);
                 shootRate = 0;
                 agent.velocity = Vector3.zero;
                 agent.acceleration = 0;

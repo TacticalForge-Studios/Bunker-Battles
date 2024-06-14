@@ -30,8 +30,10 @@ public class gameManager : MonoBehaviour
     
 
     [SerializeField] TMP_Text enemyCountText;
+    [SerializeField] TMP_Text currencyCountText;
     public TMP_Text ammoCurrText;
     public TMP_Text ammoMaxText;
+    
 
     public GameObject playerSpawnPos;
     public GameObject playerFlashDamage;
@@ -39,7 +41,9 @@ public class gameManager : MonoBehaviour
     public playerController playerScript;
    
     public bool isPaused;
+    public static bool moneySaved = false;
     int enemyCount;
+    public int currency;
 
     // Start is called before the first frame update
     void Awake()
@@ -111,5 +115,25 @@ public class gameManager : MonoBehaviour
         statePause();
         menuActive = menuLevelUp;
         menuActive.SetActive(menuLevelUp);
+    }
+
+    public void UpdateCurrencyText(int amount)
+    {
+        if (!moneySaved)
+        {
+            buttonFunctions.currency += amount;
+        }
+        
+        
+        
+
+        if (buttonFunctions.currency < 0)
+        {
+            buttonFunctions.currency = 0;
+        }
+
+        currencyCountText.text = buttonFunctions.currency.ToString("F0");
+        
+        
     }
 }

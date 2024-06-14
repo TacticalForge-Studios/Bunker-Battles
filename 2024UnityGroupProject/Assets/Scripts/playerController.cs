@@ -73,6 +73,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     bool isSprinting = false;
     bool armorBroken = false;
     bool flashlightOn = false;
+
+    
     
 
     // Start is called before the first frame update
@@ -88,7 +90,11 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         currenPlayerLvl = buttonFunctions.currentPlayerLvl;
         maxStamina = buttonFunctions.stamina;
         currentStamina = maxStamina;
+        gameManager.moneySaved = true;
+        gameManager.instance.UpdateCurrencyText(buttonFunctions.currency);
+        gameManager.moneySaved = false;
         spawnPlayer();
+        
 
     }
 

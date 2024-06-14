@@ -111,7 +111,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
                 {
                     StartCoroutine(melee());
                 }
-                if (agent.remainingDistance <= agent.stoppingDistance)
+                if (agent.remainingDistance <= agent.stoppingDistance && !isDead)
                 {
                     faceTarget();
                 }
@@ -149,7 +149,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-
+        
         UpdateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
         if (!isDead)
@@ -157,14 +157,17 @@ public class MeleeEnemy : MonoBehaviour, IDamage
             EnemyUI.SetActive(true);
             anim.SetTrigger("TakeDamage");
             UpdateEnemyUI();
+            
         }
 
 
         if (HP <= 0)
         {
+            anim.SetBool("isDead", true);
             if (!isDead)
             {
                 gameManager.instance.playerScript.giveXP(60);
+                gameManager.instance.UpdateCurrencyText(10);
                 hitRate = 0;
                 agent.velocity = Vector3.zero;
                 agent.acceleration = 0;
