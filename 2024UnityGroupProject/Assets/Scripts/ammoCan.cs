@@ -5,7 +5,7 @@ using UnityEngine;
 public class ammoCan : MonoBehaviour
 {
     [SerializeField] int resupplyAmount;
-
+    
     private void OnTriggerEnter(Collider other)
     {
         bool hasGun = gameManager.instance.playerScript.checkGunList();

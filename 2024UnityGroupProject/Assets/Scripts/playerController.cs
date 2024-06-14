@@ -41,6 +41,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [Range(0, 1)][SerializeField] float audJumpVol;
     [SerializeField] AudioClip audHeal;
     [Range(0, 1)][SerializeField] float audHealVol;
+    [SerializeField] AudioClip audAmmoPickup;
+    [Range(0, 1)][SerializeField] float audAmmoPickupVol;
+
 
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
@@ -151,6 +154,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
                     int roundsShot = gunList[selectedGun].magCapacity - gunList[selectedGun].ammoCurrent;
                     gunList[selectedGun].ammoCurrent = gunList[selectedGun].ammoCurrent + gunList[selectedGun].totalAmmoLeft;
                     gunList[selectedGun].totalAmmoLeft = gunList[selectedGun].totalAmmoLeft - roundsShot;
+                    
                 }
                 else
                 {
@@ -471,6 +475,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void Resupply(int amount)
     {
         gunList[selectedGun].totalAmmoLeft += amount;
+        aud.PlayOneShot(audAmmoPickup, audAmmoPickupVol);
 
         if (gunList[selectedGun].totalAmmoLeft > gunList[selectedGun].ammoMax)
         {
