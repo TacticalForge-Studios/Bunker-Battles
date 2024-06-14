@@ -47,6 +47,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip[] reloadSounds;
     [Range(0, 1)][SerializeField] float reloadSoundsVol;
 
+    [SerializeField] AudioClip AmmoFailSound;
+    [Range(0, 1)][SerializeField] float AmmoFailSoundVol;
 
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
@@ -146,11 +148,19 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         }
 
 
-
+       
         if (Input.GetButton("Fire1") && gunList.Count > 0 && gunList[selectedGun].ammoCurrent > 0 && !isShooting)
         {
             StartCoroutine(Shoot());
+
+            
         }
+        else if(Input.GetButtonDown("Fire1") && gunList.Count > 0 && gunList[selectedGun].ammoCurrent == 0 && !isShooting)
+        {
+           aud.PlayOneShot(AmmoFailSound, AmmoFailSoundVol);
+        }
+
+
 
         if (Input.GetButtonDown("Reload"))
         {
@@ -172,6 +182,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
                 {
                     aud.PlayOneShot(reloadSounds[3], reloadSoundsVol);
                 }
+
+               
 
                 if (gunList[selectedGun].ammoCurrent + gunList[selectedGun].totalAmmoLeft < gunList[selectedGun].magCapacity)
                 {
@@ -269,6 +281,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     IEnumerator Shoot()
     {
+
+       
+
         isShooting = true;
 
 

@@ -6029,6 +6029,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1788663607}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: AmmoFailSound
+      value: 
+      objectReference: {fileID: 8300000, guid: be468c989a401c84bb6f91db5283d0f2, type: 3}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: reloadSoundsVol
       value: 1
       objectReference: {fileID: 0}
@@ -6036,6 +6040,10 @@ PrefabInstance:
       propertyPath: takingArmDamage
       value: 
       objectReference: {fileID: 1390553643}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: AmmoFailSoundVol
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3360185070103637596, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
