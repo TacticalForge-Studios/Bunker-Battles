@@ -44,6 +44,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip audAmmoPickup;
     [Range(0, 1)][SerializeField] float audAmmoPickupVol;
 
+    [SerializeField] AudioClip[] reloadSounds;
+    [Range(0, 1)][SerializeField] float reloadSoundsVol;
+
 
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
@@ -153,7 +156,22 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         {
             if (gunList[selectedGun].totalAmmoLeft > 0)
             {
-                
+                if (gunList[selectedGun].gunModel.CompareTag("Pistol"))
+                {
+                    aud.PlayOneShot(reloadSounds[1], reloadSoundsVol);
+                }
+                else if(gunList[selectedGun].gunModel.CompareTag("Rifle"))
+                {
+                    aud.PlayOneShot(reloadSounds[2], reloadSoundsVol);
+                }
+                else if(gunList[selectedGun].gunModel.CompareTag("Shotgun"))
+                {
+                    aud.PlayOneShot(reloadSounds[0], reloadSoundsVol);
+                }
+                else 
+                {
+                    aud.PlayOneShot(reloadSounds[3], reloadSoundsVol);
+                }
 
                 if (gunList[selectedGun].ammoCurrent + gunList[selectedGun].totalAmmoLeft < gunList[selectedGun].magCapacity)
                 {

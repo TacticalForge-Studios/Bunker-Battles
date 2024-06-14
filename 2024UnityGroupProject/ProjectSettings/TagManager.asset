@@ -11,6 +11,8 @@ TagManager:
   - Rifle
   - Shotgun
   - MeleeHead
+  - Machine Gun
+  - MachineGun
   layers:
   - Default
   - TransparentFX
