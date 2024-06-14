@@ -638,6 +638,11 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         return shootDamage;
     }
 
+    public float getShootRate()
+    {
+        return shootRate;
+    }
+
     public int getLevel()
     {
         return currenPlayerLvl;
@@ -663,7 +668,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         ArmorOrig = armorOrig;
     }
     
-
+    public bool getIsShooting()
+    {
+        return isShooting;
+    }
 }
 
 
