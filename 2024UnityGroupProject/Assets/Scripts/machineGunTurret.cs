@@ -56,17 +56,17 @@ public class machineGunTurret : MonoBehaviour, IDamage
     bool canSeePlayer()
     {
         playerDir = gameManager.instance.player.transform.position - transform.position;
-        angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, playerDir.y + 1, playerDir.z), transform.forward);
+        angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, playerDir.y, playerDir.z), transform.forward);
 
-        Debug.DrawRay(headPos.position, new Vector3(playerDir.x, playerDir.y, playerDir.z + 1));
+        Debug.DrawRay(shootPos.position, playerDir);
         Debug.Log(angleToPlayer);
         RaycastHit hit;
-        if(Physics.Raycast(shootPos.position, playerDir, out hit) && angleToPlayer <= viewAngle)
+        if(Physics.Raycast(shootPos.position, playerDir, out hit))
         {
             if(hit.collider.CompareTag("Player") && playerInRange)
             {
                 
-                if(!isShooting && HP >= 1 && angleToPlayer <= 90)
+                if(!isShooting && HP >= 1)
                 {
                     anim.SetBool("isShooting", true);
                     StartCoroutine(shoot());
