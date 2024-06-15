@@ -51,7 +51,6 @@ MonoBehaviour:
   lovkVertMin: -90
   lockVertMax: 90
   invertY: 0
-  recoil: 3
 --- !u!20 &8542722570942933615
 Camera:
   m_ObjectHideFlags: 0
@@ -881,6 +880,7 @@ GameObject:
   - component: {fileID: 6933132639016146102}
   - component: {fileID: 3558631038887335386}
   - component: {fileID: 57026755239583372}
+  - component: {fileID: 200788872285043362}
   - component: {fileID: 1650678317751128882}
   m_Layer: 0
   m_Name: Player
@@ -1088,6 +1088,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &200788872285043362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254826713452553207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02b0fadc8a04b940af8fca4bc8d99f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerControl: {fileID: 415876275501844590}
+  crouchSpeed: 2
+  normHeight: 2
+  crouchHeight: 0.2
+  offsetPlayer: {x: 0, y: 1.5, z: 0}
+  thePlayer: {fileID: 3360185070103637596}
 --- !u!82 &1650678317751128882
 AudioSource:
   m_ObjectHideFlags: 0
