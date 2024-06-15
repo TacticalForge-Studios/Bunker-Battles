@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class buttonFunctions : MonoBehaviour
 {
-    int currentLvl = 0;
+    int currentLvl = 1;
     public static int HP;
     public static float stamina;
     public static int currentPlayerLvl;
@@ -56,11 +56,13 @@ public class buttonFunctions : MonoBehaviour
 
     public void Quit()
     {
-    #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-    #else
-            Application.Quit();
-    #endif
+        SceneManager.LoadScene(0);
+        
+//#if UNITY_EDITOR
+//        UnityEditor.EditorApplication.isPlaying = false;
+//#else
+//            Application.Quit();
+//#endif
     }
 
     public void IncreaseHealth()

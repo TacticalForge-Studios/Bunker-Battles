@@ -748,6 +748,11 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     {
         return didGunChange;
     }
+
+    public CharacterController getController()
+    {
+        return controller;
+    }
 }
 
 
