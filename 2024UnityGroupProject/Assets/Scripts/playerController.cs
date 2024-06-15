@@ -53,6 +53,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip gunPickUpSound;
     [Range(0, 1)][SerializeField] float gunPickUpVol;
 
+    [SerializeField] AudioClip footstepSounds;
+    [Range(0, 1)][SerializeField] float footstepVol;
+
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
     public ParticleSystem hitEffect;
@@ -290,6 +293,19 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
                 controller.height = normHeight;
             }
         }
+    }
+
+    void FootstepSounds()
+    {
+        if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+        {
+            aud.PlayOneShot(footstepSounds, footstepVol);
+        }
+        else
+        {
+            
+        }
+
     }
 
     void sprint()
