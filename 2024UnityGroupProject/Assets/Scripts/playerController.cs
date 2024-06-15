@@ -565,6 +565,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void spawnPlayer()
     {
         HP = HPOrig;
+        Armor = ArmorOrig;
         updatePlayerUI();
 
         controller.enabled = false;
