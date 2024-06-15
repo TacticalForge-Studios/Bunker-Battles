@@ -61,6 +61,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     Vector3 moveDir;
     Vector3 playerVel;
+    Vector3 offsetPlayer;
 
     int jumpCount;
     int HPOrig;
@@ -77,12 +78,16 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     float timeSinceTakenDamage;
     int selectedGun;
     int recoil;
+    public float crouchSpeed = 2;
+    public float normHeight = 2;
+    public float crouchHeight = 0.2f;
 
     bool isShooting;
     bool isSprinting = false;
     bool armorBroken = false;
     bool flashlightOn = false;
     bool didGunChange = false;
+    bool isCrouching = false;
     
     
 
@@ -125,6 +130,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     void movement()
     {
         sprint();
+
+        crouch();
+    
 
         if (isSprinting)
         {
@@ -249,6 +257,39 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
         playerVel.y -= gravity * Time.deltaTime;
         controller.Move(playerVel * Time.deltaTime);
+    }
+
+    void crouch()
+    {
+        offsetPlayer = new Vector3(0, 1.5f, 0);
+
+        if (Input.GetButtonDown("Crouch"))
+        {
+            isCrouching = !isCrouching;
+        }
+
+        if (isCrouching == true)
+        {
+            controller.height = controller.height - crouchSpeed * Time.deltaTime;
+
+            if (controller.height <= crouchHeight)
+            {
+                controller.height = crouchHeight;
+            }
+        }
+        if (isCrouching == false)
+        {
+            controller.height = controller.height + crouchSpeed * Time.deltaTime;
+
+            if (controller.height < normHeight)
+            {
+                transform.position = transform.position + offsetPlayer * Time.deltaTime;
+            }
+            if (controller.height >= normHeight)
+            {
+                controller.height = normHeight;
+            }
+        }
     }
 
     void sprint()
