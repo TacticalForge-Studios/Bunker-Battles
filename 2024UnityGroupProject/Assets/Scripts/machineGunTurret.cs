@@ -9,6 +9,7 @@ public class machineGunTurret : MonoBehaviour, IDamage
     [SerializeField] Animator anim;
     [SerializeField] Renderer model;
     [SerializeField] Transform shootPos;
+    [SerializeField] Transform headPos;
 
     [Header("Sats")]
     [SerializeField] int HP;
@@ -54,10 +55,10 @@ public class machineGunTurret : MonoBehaviour, IDamage
 
     bool canSeePlayer()
     {
-        playerDir = gameManager.instance.player.transform.position - shootPos.position;
+        playerDir = gameManager.instance.player.transform.position - transform.position;
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, playerDir.y + 1, playerDir.z), transform.forward);
 
-        Debug.DrawRay(shootPos.position, new Vector3(playerDir.x, playerDir.y + 1, playerDir.z));
+        Debug.DrawRay(headPos.position, new Vector3(playerDir.x, playerDir.y, playerDir.z + 1));
         Debug.Log(angleToPlayer);
         RaycastHit hit;
         if(Physics.Raycast(shootPos.position, playerDir, out hit) && angleToPlayer <= viewAngle)
@@ -65,13 +66,13 @@ public class machineGunTurret : MonoBehaviour, IDamage
             if(hit.collider.CompareTag("Player") && playerInRange)
             {
                 
-                if(!isShooting && HP >= 1)
+                if(!isShooting && HP >= 1 && angleToPlayer <= 90)
                 {
                     anim.SetBool("isShooting", true);
                     StartCoroutine(shoot());
                 }
                 
-
+                
                 if (isDead == false)
                 {
                     //faceTarget();

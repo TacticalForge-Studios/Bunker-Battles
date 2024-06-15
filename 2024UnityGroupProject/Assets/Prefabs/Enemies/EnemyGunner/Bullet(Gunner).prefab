@@ -51,7 +51,7 @@ MonoBehaviour:
   damage: 1
   speed: 50
   destroyTime: 3
-  bulletGravity: -9
+  bulletGravity: -50
   enableGravity: 1
 --- !u!135 &5547616702083706723
 SphereCollider:
