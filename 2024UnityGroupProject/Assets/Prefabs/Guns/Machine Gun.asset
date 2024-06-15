@@ -16,10 +16,11 @@ MonoBehaviour:
   shootDamage: 1
   shootRate: 0.25
   shootDist: 40
-  ammoCurrent: 46
+  ammoCurrent: 42
   ammoMax: 200
   totalAmmoLeft: 150
   magCapacity: 50
+  recoil: 2
   hitEffect: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}
   shootSound: {fileID: 8300000, guid: ab709c0311c99084b8885f1b8acc461d, type: 3}
   shootVolume: 0.502

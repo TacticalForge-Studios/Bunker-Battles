@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class cameraController : MonoBehaviour
@@ -7,10 +8,10 @@ public class cameraController : MonoBehaviour
     [SerializeField] int sens;
     [SerializeField] int lovkVertMin, lockVertMax;
     [SerializeField] bool invertY;
-    [SerializeField] float recoil;
+
 
     float rotX;
-    float recoilTimer = 0;
+    float recoilTimer;
     
     // Start is called before the first frame update
     void Start()
@@ -40,15 +41,17 @@ public class cameraController : MonoBehaviour
 
         transform.parent.Rotate(Vector3.up * mouseX);
 
+        recoilTimer += Time.deltaTime;
+
         if (Input.GetButton("Fire1") && gameManager.instance.playerScript.checkGunList() && gameManager.instance.playerScript.getIsShooting() && recoilTimer >= gameManager.instance.playerScript.getShootRate())
         {
-            rotX -= recoil;
+            rotX -= gameManager.instance.playerScript.getRecoil();
             recoilTimer = 0;
         }
 
-        if (recoilTimer < gameManager.instance.playerScript.getShootRate())
+        if (gameManager.instance.playerScript.getDidGunChange())
         {
-            recoilTimer += Time.deltaTime;
+            recoilTimer += gameManager.instance.playerScript.getShootRate();
         }
     }
 }

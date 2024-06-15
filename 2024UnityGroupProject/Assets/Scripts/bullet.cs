@@ -9,11 +9,14 @@ public class bullet : MonoBehaviour
     [SerializeField] int damage;
     [SerializeField] int speed;
     [SerializeField] int destroyTime;
-
+    [SerializeField] float bulletGravity;
+    [SerializeField] bool enableGravity;
 
     // Start is called before the first frame update
     void Start()
     {
+        rb.useGravity = enableGravity;
+        Physics.gravity = new Vector3 (0, bulletGravity, 0);
 
         Vector3 playerDir = new Vector3(gameManager.instance.player.transform.position.x, gameManager.instance.player.transform.position.y, gameManager.instance.player.transform.position.z);
 

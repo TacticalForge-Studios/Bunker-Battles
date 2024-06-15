@@ -76,12 +76,13 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     float armorRecharge = 2.0f;
     float timeSinceTakenDamage;
     int selectedGun;
+    int recoil;
 
     bool isShooting;
     bool isSprinting = false;
     bool armorBroken = false;
     bool flashlightOn = false;
-
+    bool didGunChange = false;
     
     
 
@@ -570,6 +571,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         shootDamage = gun.shootDamage;
         shootDist = gun.shootDist;
         shootRate = gun.shootRate;
+        recoil = gun.recoil;
         gunModel.GetComponent<MeshFilter>().sharedMesh = gun.gunModel.GetComponent<MeshFilter>().sharedMesh;
         gunModel.GetComponent<MeshRenderer>().sharedMaterial = gun.gunModel.GetComponent<MeshRenderer>().sharedMaterial;
     }
@@ -589,14 +591,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     }
     public void changeGun()
     {
+        didGunChange = true;
         gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");
         gameManager.instance.ammoMaxText.text = gunList[selectedGun].totalAmmoLeft.ToString("F0");
 
         shootDamage = gunList[selectedGun].shootDamage;
         shootDist = gunList[selectedGun].shootDist;
         shootRate = gunList[selectedGun].shootRate;
+        recoil = gunList[selectedGun].recoil;
         gunModel.GetComponent<MeshFilter>().sharedMesh = gunList[selectedGun].gunModel.GetComponent<MeshFilter>().sharedMesh;
         gunModel.GetComponent<MeshRenderer>().sharedMaterial = gunList[selectedGun].gunModel.GetComponent<MeshRenderer>().sharedMaterial;
+        didGunChange = false;
     }
 
     public void setXPMax(float xp)
@@ -646,6 +651,11 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         return shootRate;
     }
 
+    public int getRecoil()
+    {
+        return recoil;
+    }
+
     public int getLevel()
     {
         return currenPlayerLvl;
@@ -674,6 +684,11 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public bool getIsShooting()
     {
         return isShooting;
+    }
+
+    public bool getDidGunChange()
+    {
+        return didGunChange;
     }
 }
 

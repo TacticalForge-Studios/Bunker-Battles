@@ -16,6 +16,7 @@ public class gunStats : ScriptableObject
     public int ammoMax;
     public int totalAmmoLeft;
     public int magCapacity;
+    public int recoil;
 
     public ParticleSystem hitEffect;
     public AudioClip shootSound;
