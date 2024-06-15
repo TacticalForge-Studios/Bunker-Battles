@@ -50,6 +50,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip AmmoFailSound;
     [Range(0, 1)][SerializeField] float AmmoFailSoundVol;
 
+    [SerializeField] AudioClip gunPickUpSound;
+    [Range(0, 1)][SerializeField] float gunPickUpVol;
+
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
 
     public ParticleSystem hitEffect;
@@ -558,7 +561,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void pickUpGun(gunStats gun)
     {
         gunList.Add(gun);
-
+        aud.PlayOneShot(gunPickUpSound,gunPickUpVol);
         selectedGun = gunList.Count - 1;
 
         gameManager.instance.ammoCurrText.text = gunList[selectedGun].ammoCurrent.ToString("F0");

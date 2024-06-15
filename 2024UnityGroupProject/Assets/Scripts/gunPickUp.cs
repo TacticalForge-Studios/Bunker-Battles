@@ -19,5 +19,6 @@ public class gunPickUp : MonoBehaviour
             gameManager.instance.playerScript.pickUpGun(gun);
             Destroy(gameObject);
         }
+
     }
 }
