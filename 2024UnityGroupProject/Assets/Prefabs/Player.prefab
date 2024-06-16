@@ -963,6 +963,8 @@ MonoBehaviour:
   gunPickUpVol: 0.515
   footstepSounds: {fileID: 8300000, guid: 92aa1817e100f974f9f63d4989bf9eab, type: 3}
   footstepVol: 1
+  deathSound: {fileID: 8300000, guid: 37e287e056a78774c9cc29ac0bd3bc12, type: 3}
+  deathVol: 1
   gunList: []
   hitEffect: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}
   hitEffectBlood: {fileID: 4349289171682470801, guid: 0373245e0cb7efa4eb62f7e68bbfecf2, type: 3}

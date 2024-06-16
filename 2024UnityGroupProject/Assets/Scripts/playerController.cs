@@ -28,13 +28,13 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] GameObject flashlight;
     [SerializeField] GameObject lowAmmo;
     [SerializeField] GameObject noAmmo;
-    
+
 
     [SerializeField] GameObject takingDamage;
     [SerializeField] GameObject takingArmDamage;
     [SerializeField] GameObject lowHealth;
     [SerializeField] GameObject almostDead;
-    
+
 
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip[] audJump;
@@ -55,6 +55,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     [SerializeField] AudioClip footstepSounds;
     [Range(0, 1)][SerializeField] float footstepVol;
+
+    [SerializeField] AudioClip deathSound;
+    [Range(0, 1)][SerializeField] float deathVol;
 
     [SerializeField] public List<gunStats> gunList = new List<gunStats>();
 
@@ -480,6 +483,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
         if (HP <= 0)
         {
+            aud.PlayOneShot(deathSound, deathVol);
             // Hey I'm Dead
             gameManager.instance.YouLose();
         }
