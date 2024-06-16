@@ -13,6 +13,7 @@ TagManager:
   - MeleeHead
   - Machine Gun
   - MachineGun
+  - Store
   layers:
   - Default
   - TransparentFX

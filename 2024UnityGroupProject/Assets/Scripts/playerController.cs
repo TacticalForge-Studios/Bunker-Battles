@@ -56,7 +56,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip footstepSounds;
     [Range(0, 1)][SerializeField] float footstepVol;
 
-    [SerializeField] List<gunStats> gunList = new List<gunStats>();
+    [SerializeField] public List<gunStats> gunList = new List<gunStats>();
 
     public ParticleSystem hitEffect;
     public ParticleSystem hitEffectBlood;
@@ -160,6 +160,16 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         {
             isSprinting = false;
 
+        }
+
+        if (Input.GetButtonDown("Interact"))
+        {
+            Debug.Log("Player pressed E");
+
+            if (store.isInRange)
+            {
+                gameManager.instance.storeScript.OpenStore();
+            }
         }
 
 
@@ -515,7 +525,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         
     }
 
-    void updatePlayerUI()
+    public void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / HPOrig;
         gameManager.instance.playerStaminaBar.fillAmount = currentStamina / maxStamina;
@@ -749,9 +759,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         return didGunChange;
     }
 
-    public CharacterController getController()
+    public void setCurrentHealth(int hp)
     {
-        return controller;
+        HP = hp;
     }
 }
 

@@ -15,10 +15,23 @@ public class buttonFunctions : MonoBehaviour
     public static float maxXP;
     public static int xp;
     public static int currency;
+    int currencyOrig;
+
+    int pistolPrice = 50;
+    int shotgunPrice = 70;
+    int riflePrice = 100;
+    int machineGunPrice = 80;
+    int ammoPrice = 20;
+    int healPrice = 20;
 
     private void Awake()
     {
         SetPlayerStats();
+        currencyOrig = currency;
+    }
+
+    private void Update()
+    {
         
     }
 
@@ -32,6 +45,7 @@ public class buttonFunctions : MonoBehaviour
             armorOrig = 10;
             playerArmor = armorOrig;
             maxXP = 100;
+            currency = 1000;
         }
         playerArmor = armorOrig;
         
@@ -50,6 +64,7 @@ public class buttonFunctions : MonoBehaviour
 
     public void Restart()
     {
+        currency = currencyOrig;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameManager.instance.stateUnPause();
     }
@@ -106,6 +121,128 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.playerScript.setXPMax(maxXP);
         
 
+    }
+
+
+    public void PurchasePistol()
+    {
+
+        if(currency < pistolPrice)
+        {
+            StartCoroutine(noMoney());
+        }
+
+        if(currency >= pistolPrice)
+        {
+            currency -= pistolPrice;
+            gameManager.moneySaved = true;
+            gameManager.instance.storeScript.UpdateStoreCurrencyText();
+            gameManager.instance.UpdateCurrencyText(currency);
+            gameManager.moneySaved = false;
+            gameManager.instance.storeScript.GunPurchased(0);
+        }
+    }
+
+    public void PurchaseShotgun()
+    {
+        if(currency < shotgunPrice)
+        {
+            StartCoroutine(noMoney());
+        }
+
+        if (currency >= shotgunPrice)
+        {
+            currency -= shotgunPrice;
+            gameManager.moneySaved = true;
+            gameManager.instance.storeScript.UpdateStoreCurrencyText();
+            gameManager.instance.UpdateCurrencyText(currency);
+            gameManager.moneySaved = false;
+            gameManager.instance.storeScript.GunPurchased(1);
+
+        }
+    }
+
+    public void PurchaseRifle()
+    {
+        if (currency < riflePrice)
+        {
+            StartCoroutine(noMoney());
+        }
+
+        if (currency >= riflePrice)
+        {
+            currency -= riflePrice;
+            gameManager.moneySaved = true;
+            gameManager.instance.storeScript.UpdateStoreCurrencyText();
+            gameManager.instance.UpdateCurrencyText(currency);
+            gameManager.moneySaved = false;
+            gameManager.instance.storeScript.GunPurchased(2);
+
+        }
+    }
+
+    public void PurchaseMachineGun()
+    {
+        if (currency < machineGunPrice)
+        {
+            StartCoroutine(noMoney());
+        }
+
+        if (currency >= machineGunPrice)
+        {
+            currency -= machineGunPrice;
+            gameManager.moneySaved = true;
+            gameManager.instance.storeScript.UpdateStoreCurrencyText();
+            gameManager.instance.UpdateCurrencyText(currency);
+            gameManager.moneySaved = false;
+            gameManager.instance.storeScript.GunPurchased(3);
+
+        }
+    }
+
+    public void PurchaseAmmo()
+    {
+        if (currency < ammoPrice)
+        {
+            StartCoroutine(noMoney());
+        }
+
+        if (currency >= ammoPrice)
+        {
+            currency -= ammoPrice;
+            gameManager.moneySaved = true;
+            gameManager.instance.storeScript.UpdateStoreCurrencyText();
+            gameManager.instance.UpdateCurrencyText(currency);
+            gameManager.moneySaved = false;
+            gameManager.instance.storeScript.GunPurchased(4);
+
+        }
+    }
+
+    public void PurchaseHeal()
+    {
+        if (currency < healPrice)
+        {
+            StartCoroutine(noMoney());
+        }
+
+        if (currency >= healPrice)
+        {
+            currency -= healPrice;
+            gameManager.moneySaved = true;
+            gameManager.instance.storeScript.UpdateStoreCurrencyText();
+            gameManager.instance.UpdateCurrencyText(currency);
+            gameManager.moneySaved = false;
+            gameManager.instance.storeScript.GunPurchased(5);
+
+        }
+    }
+
+    IEnumerator noMoney()
+    {
+        gameManager.instance.storeScript.noMoneyPopUp.SetActive(true);
+        yield return new WaitForSeconds(2);
+        gameManager.instance.storeScript.noMoneyPopUp.SetActive(false);
     }
 
 }

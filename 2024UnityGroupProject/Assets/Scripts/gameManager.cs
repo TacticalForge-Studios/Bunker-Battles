@@ -27,6 +27,8 @@ public class gameManager : MonoBehaviour
     public Image playerXPBar;
 
     public GameObject player;
+
+    public GameObject store;
     
 
     [SerializeField] TMP_Text enemyCountText;
@@ -39,6 +41,7 @@ public class gameManager : MonoBehaviour
     public GameObject playerFlashDamage;
 
     public playerController playerScript;
+    public store storeScript;
    
     public bool isPaused;
     public static bool moneySaved = false;
@@ -49,6 +52,8 @@ public class gameManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+        store = GameObject.FindWithTag("Store");
+        storeScript = store.GetComponent<store>();
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
@@ -86,8 +91,13 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        menuActive.SetActive(isPaused);
-        menuActive = null;
+        if(menuActive != null)
+        {
+            menuActive.SetActive(isPaused);
+            menuActive = null;
+        }
+        
+        
     }
 
     public void UpdateGameGoal(int amount)

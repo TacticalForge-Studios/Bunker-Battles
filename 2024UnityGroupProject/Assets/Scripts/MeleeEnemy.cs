@@ -48,7 +48,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
         stoppingDistOrig = agent.stoppingDistance;
         HPOrig = HP;
         UpdateEnemyUI();
-        //gameManager.instance.UpdateGameGoal(1);
+        gameManager.instance.UpdateGameGoal(1);
     }
 
     // Update is called once per frame

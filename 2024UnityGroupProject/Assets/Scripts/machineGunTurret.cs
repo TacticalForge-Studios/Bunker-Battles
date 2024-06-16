@@ -59,7 +59,7 @@ public class machineGunTurret : MonoBehaviour, IDamage
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, playerDir.y, playerDir.z), transform.forward);
 
         Debug.DrawRay(shootPos.position, playerDir);
-        Debug.Log(angleToPlayer);
+        //Debug.Log(angleToPlayer);
         RaycastHit hit;
         if(Physics.Raycast(shootPos.position, playerDir, out hit))
         {
