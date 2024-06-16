@@ -119,8 +119,11 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.playerScript.setLvl(currentPlayerLvl);
         gameManager.instance.playerScript.setXp(xp);
         gameManager.instance.playerScript.setXPMax(maxXP);
-        
+    }
 
+    public void CloseStore()
+    {
+        gameManager.instance.storeScript.GunPurchased(6);
     }
 
 

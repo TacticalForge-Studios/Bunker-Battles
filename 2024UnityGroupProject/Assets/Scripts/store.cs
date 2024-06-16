@@ -114,6 +114,11 @@ public class store : MonoBehaviour
                 storeUI.SetActive(false);
                 gameManager.instance.stateUnPause();
                 break;
+            case 6:
+                anim.SetBool("isOpened", false);
+                storeUI.SetActive(false);
+                gameManager.instance.stateUnPause();
+                break;
 
         }
     }
