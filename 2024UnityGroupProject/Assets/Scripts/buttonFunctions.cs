@@ -45,7 +45,7 @@ public class buttonFunctions : MonoBehaviour
             armorOrig = 10;
             playerArmor = armorOrig;
             maxXP = 100;
-            currency = 1000;
+            currency = 50;
         }
         playerArmor = armorOrig;
         
