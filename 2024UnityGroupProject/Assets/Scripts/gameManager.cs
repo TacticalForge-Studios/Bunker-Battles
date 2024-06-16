@@ -42,8 +42,8 @@ public class gameManager : MonoBehaviour
 
     public playerController playerScript;
     public store storeScript;
-   
-    public bool isPaused;
+
+    public bool isPaused = false;
     public static bool moneySaved = false;
     int enemyCount;
     public int currency;
@@ -98,6 +98,19 @@ public class gameManager : MonoBehaviour
         }
         
         
+    }
+    
+    public void menuUnpause()
+    {
+        isPaused = !isPaused;
+        Time.timeScale = 1;
+        Cursor.visible = true;
+        Cursor.lockState= CursorLockMode.Confined;
+        if(menuActive != null)
+        {
+            menuActive.SetActive(isPaused);
+            menuActive = null;
+        }
     }
 
     public void UpdateGameGoal(int amount)

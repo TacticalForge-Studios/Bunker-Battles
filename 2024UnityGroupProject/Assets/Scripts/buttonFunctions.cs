@@ -71,7 +71,9 @@ public class buttonFunctions : MonoBehaviour
 
     public void Quit()
     {
+        gameManager.instance.menuUnpause();
         SceneManager.LoadScene(0);
+        
         
 //#if UNITY_EDITOR
 //        UnityEditor.EditorApplication.isPlaying = false;
