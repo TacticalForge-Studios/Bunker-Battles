@@ -319,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 797781605792659004}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.27399, y: 0.125, z: 14.402572}
+  m_LocalPosition: {x: -20.27399, y: 0.125, z: 14.40257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -389,6 +389,7 @@ MonoBehaviour:
   model: {fileID: 5285160187570168521}
   shootPos: {fileID: 8164426272653550754}
   headPos: {fileID: 2226789186807913820}
+  itemSpawnPos: {fileID: 0}
   HP: 25
   viewAngle: 80
   faceTargetSpeed: 10
@@ -396,6 +397,7 @@ MonoBehaviour:
   roamDist: 10
   roamTimer: 3
   EnemyUI: {fileID: 0}
+  ItemToSpawn: {fileID: 0}
   bullet: {fileID: 6610430800471585784, guid: 31275160d8b492341a7e7076f8be2fa5, type: 3}
   shootRate: 0.5
   enemyHPBarBack: {fileID: 6149289986615136810}

@@ -51,8 +51,10 @@ MonoBehaviour:
   damage: 1
   speed: 50
   destroyTime: 3
-  bulletGravity: -9
+  bulletGravity: -2
   enableGravity: 1
+  isSniper: 0
+  isGeneral: 0
 --- !u!135 &5547616702083706723
 SphereCollider:
   m_ObjectHideFlags: 0

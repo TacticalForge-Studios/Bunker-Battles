@@ -11,10 +11,15 @@ public class bullet : MonoBehaviour
     [SerializeField] int destroyTime;
     [SerializeField] float bulletGravity;
     [SerializeField] bool enableGravity;
+    [SerializeField] bool isSniper;
+    [SerializeField] bool isGeneral;
+    Vector3 shotOffset;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+        chooseOffset();
         rb.useGravity = enableGravity;
         Physics.gravity = new Vector3 (0, bulletGravity, 0);
 
@@ -22,20 +27,24 @@ public class bullet : MonoBehaviour
 
         if (transform.position.y < gameManager.instance.player.transform.position.y)
         {
-            rb.velocity = (playerDir - transform.position).normalized * speed;
+            rb.velocity = (playerDir - transform.position + shotOffset).normalized * speed;
         }
         else if (transform.position.y > gameManager.instance.player.transform.position.y)
-        { 
-            rb.velocity = (playerDir - transform.position).normalized * speed;
+        {
+            rb.velocity = (playerDir - transform.position + shotOffset).normalized * speed;
         }
         else
         {
-            rb.velocity = transform.forward * speed;
+            rb.velocity = transform.forward + shotOffset * speed;
         }
-
 
         Destroy(gameObject, destroyTime);
 
+    }
+
+    private void Update()
+    {
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -76,5 +85,23 @@ public class bullet : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    void chooseOffset()
+    {
+        if (isSniper)
+        {
+            shotOffset = new Vector3(Random.Range(-.9f, .9f), Random.Range(-.9f, .9f), Random.Range(-.9f, .9f));
+        }
+        else if (isGeneral)
+        {
+            shotOffset = new Vector3(Random.Range(-.8f, .8f), Random.Range(-.8f, .8f), Random.Range(-.8f, .8f));
+        }
+        else
+        {
+            shotOffset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        }
+        
+        
     }
 }
