@@ -1337,6 +1337,9 @@ MonoBehaviour:
     Arthur
     Probst
 
+
+    Unity Asset Store
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3508,7 +3511,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lead Developer\n\nAnimator \n\nUX/UI Design\n\nAudio\n\nProgrammers\n\n\n\n"
+  m_text: "Lead Developer\n\nAnimator \n\nUX/UI Design\n\nAudio\n\nProgrammers\n\n\n\n\nSource
+    of Assets\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3571,7 +3575,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -163.2182, y: -236.5586, z: 0, w: -385.25146}
+  m_margin: {x: -207.35547, y: -236.5586, z: 0, w: -385.25146}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
