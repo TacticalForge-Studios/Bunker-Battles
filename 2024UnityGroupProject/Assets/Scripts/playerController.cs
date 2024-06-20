@@ -1,8 +1,10 @@
 //using Palmmedia.ReportGenerator.Core.Reporting.Builders;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, ammoResupply
@@ -29,6 +31,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] GameObject flashlight;
     [SerializeField] GameObject lowAmmo;
     [SerializeField] GameObject noAmmo;
+
+    [SerializeField] TMP_Text healthLevel;
+    [SerializeField] TMP_Text healthMax;
+
+    [SerializeField] TMP_Text LevelNum;
+
+    [SerializeField] TMP_Text StaminaCurrent;
+    [SerializeField] TMP_Text StaminaMax;
+
+    [SerializeField] TMP_Text xpCurrent;
+    [SerializeField] TMP_Text xpMax;
 
 
     [SerializeField] GameObject takingDamage;
@@ -130,6 +143,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         }
         timeSinceTakenDamage += Time.deltaTime;
         RechargeArmor();
+        
         
 
     }
@@ -537,6 +551,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gameManager.instance.playerXPBar.fillAmount = xp / maxXP;
         gameManager.instance.playerArmorBar.fillAmount = Armor / ArmorOrig;
 
+        healthLevel.text = HP.ToString("F0");
+        healthMax.text = HPOrig.ToString("F0");
+        
+        LevelNum.text = currenPlayerLvl.ToString("F0");
+
+        StaminaCurrent.text = currentStamina.ToString("F0");
+        StaminaMax.text = maxStamina.ToString("F0");
+
+        xpCurrent.text = xp.ToString("F0");
+        xpMax.text = maxXP.ToString("F0");
+
         if (HP < HPOrig / 5)
         {
             lowHealth.SetActive(false);
@@ -647,6 +672,10 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         recoil = gun.recoil;
         gunModel.GetComponent<MeshFilter>().sharedMesh = gun.gunModel.GetComponent<MeshFilter>().sharedMesh;
         gunModel.GetComponent<MeshRenderer>().sharedMaterial = gun.gunModel.GetComponent<MeshRenderer>().sharedMaterial;
+        gunList[selectedGun].ammoCurrent = gunList[selectedGun].magCapacity;
+        gunList[selectedGun].totalAmmoLeft = gunList[selectedGun].ammoMax;
+        buttonFunctions.gunList.Add(gun);
+
     }
 
     void gunSelect()
@@ -695,6 +724,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         newXPMax = currentMaxXP * xpModifier;
         setXPMax(newXPMax);
         gameManager.instance.LevelUp(currenPlayerLvl);
+        buttonFunctions.currentPlayerLvl = currenPlayerLvl;
         buttonFunctions.maxXP = newXPMax;
         return newXPMax;
     }
@@ -767,6 +797,20 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void setCurrentHealth(int hp)
     {
         HP = hp;
+    }
+
+    public List<gunStats> getGunList()
+    {
+        return gunList;
+    }
+
+    public void setGunList(List<gunStats> GunList)
+    {
+        for (int i = 0; i < gunList.Count - 1; i++)
+        {
+            gunList.Add(GunList[i]);
+        }
+        
     }
 }
 

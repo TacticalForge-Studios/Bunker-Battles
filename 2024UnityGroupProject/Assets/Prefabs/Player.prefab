@@ -874,6 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3360185070103637596}
+  - component: {fileID: 1158287566020650036}
   - component: {fileID: 2402024292728441496}
   - component: {fileID: 415876275501844590}
   - component: {fileID: 7761786341552424105}
@@ -904,6 +905,27 @@ Transform:
   - {fileID: 1768265874392535935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!95 &1158287566020650036
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254826713452553207}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23bcc3a498c511f4382425b95888b161, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2402024292728441496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,6 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 415876275501844590}
+  anim: {fileID: 1158287566020650036}
   gunModel: {fileID: 8911508331084624795}
   HP: 0
   Armor: 2
@@ -934,6 +957,13 @@ MonoBehaviour:
   flashlight: {fileID: 1738835278349281808}
   lowAmmo: {fileID: 0}
   noAmmo: {fileID: 0}
+  healthLevel: {fileID: 0}
+  healthMax: {fileID: 0}
+  LevelNum: {fileID: 0}
+  StaminaCurrent: {fileID: 0}
+  StaminaMax: {fileID: 0}
+  xpCurrent: {fileID: 0}
+  xpMax: {fileID: 0}
   takingDamage: {fileID: 0}
   takingArmDamage: {fileID: 0}
   lowHealth: {fileID: 0}

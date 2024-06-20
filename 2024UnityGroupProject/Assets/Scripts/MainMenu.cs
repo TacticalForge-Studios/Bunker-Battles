@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public static bool isNewGame;
-   public void PlayGame()
+    public static bool isNewGame = false;
+
+    private void Awake()
+    {
+        isNewGame = false;
+    }
+    public void PlayGame()
     {
         isNewGame = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

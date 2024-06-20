@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class buttonFunctions : MonoBehaviour
 {
-    int currentLvl = 1;
+    public static int currentLvl = 1;
     public static int HP;
     public static float stamina;
     public static int currentPlayerLvl;
@@ -17,6 +17,8 @@ public class buttonFunctions : MonoBehaviour
     public static int currency;
     int currencyOrig;
 
+    public static List<gunStats> gunList = new List<gunStats>();
+
     int pistolPrice = 50;
     int shotgunPrice = 70;
     int riflePrice = 100;
@@ -26,7 +28,11 @@ public class buttonFunctions : MonoBehaviour
 
     private void Awake()
     {
-        SetPlayerStats();
+        if (MainMenu.isNewGame)
+        {
+            SetPlayerStats();
+        }
+        
         currencyOrig = currency;
     }
 
@@ -44,6 +50,7 @@ public class buttonFunctions : MonoBehaviour
             currentPlayerLvl = 1;
             armorOrig = 10;
             playerArmor = armorOrig;
+            xp = 0;
             maxXP = 100;
             currency = 50;
         }
@@ -55,6 +62,7 @@ public class buttonFunctions : MonoBehaviour
             armorOrig = 10;
             playerArmor = armorOrig;
             maxXP = 100;
+            xp = 0;
             currency = 50;
             MainMenu.isNewGame = false;
         }
@@ -76,6 +84,7 @@ public class buttonFunctions : MonoBehaviour
     public void Restart()
     {
         currency = currencyOrig;
+        xp = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameManager.instance.stateUnPause();
     }
@@ -119,8 +128,10 @@ public class buttonFunctions : MonoBehaviour
     }
 
     public void NextLevel()
-    { 
+    {
+        MainMenu.isNewGame = false;
         gameManager.instance.statePause();
+        
         //int hp = gameManager.instance.playerScript.GetHPOrig();
         //float stamina = gameManager.instance.playerScript.getStaminaMax();
         //int lvl = gameManager.instance.playerScript.getLevel();
@@ -132,6 +143,8 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.playerScript.setLvl(currentPlayerLvl);
         gameManager.instance.playerScript.setXp(xp);
         gameManager.instance.playerScript.setXPMax(maxXP);
+        gameManager.instance.playerScript.setGunList(gunList);
+
     }
 
     public void CloseStore()
