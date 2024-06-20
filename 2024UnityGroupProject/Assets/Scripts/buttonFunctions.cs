@@ -47,6 +47,17 @@ public class buttonFunctions : MonoBehaviour
             maxXP = 100;
             currency = 50;
         }
+        else if (MainMenu.isNewGame)
+        {
+            HP = 20;
+            stamina = 100;
+            currentPlayerLvl = 1;
+            armorOrig = 10;
+            playerArmor = armorOrig;
+            maxXP = 100;
+            currency = 50;
+            MainMenu.isNewGame = false;
+        }
         playerArmor = armorOrig;
         
     }
