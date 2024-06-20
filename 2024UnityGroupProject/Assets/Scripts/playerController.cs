@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, ammoResupply
 {
     [SerializeField] CharacterController controller;
+    [SerializeField] Animator anim;
     [SerializeField] GameObject gunModel;
 
     [SerializeField] int HP;

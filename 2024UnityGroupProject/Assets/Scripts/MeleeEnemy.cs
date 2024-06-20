@@ -24,6 +24,13 @@ public class MeleeEnemy : MonoBehaviour, IDamage
 
     [SerializeField] float hitRate;
 
+    [SerializeField] GameObject textToSpawn;
+    [SerializeField] GameObject expText;
+    [SerializeField] GameObject expNumText;
+    [SerializeField] Transform textSpawnPos;
+    [SerializeField] Transform expSpawnPos;
+    [SerializeField] Transform expNumSpawnPos;
+
     public Image enemyHPBarBack;
     public Image enemyHPBar;
     public Image enemyName;
@@ -67,9 +74,10 @@ public class MeleeEnemy : MonoBehaviour, IDamage
             StartCoroutine(roam());
         }
 
-        enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
-        enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
-        enemyName.transform.rotation = gameManager.instance.player.transform.rotation;
+        EnemyUI.transform.rotation = gameManager.instance.player.transform.rotation;
+        //enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
+        //enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
+        //enemyName.transform.rotation = gameManager.instance.player.transform.rotation;
     }
 
     IEnumerator roam()
@@ -107,7 +115,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
                 agent.SetDestination(gameManager.instance.player.transform.position);
                 
 
-                if (!isHitting)
+                if (!isHitting && agent.remainingDistance <= agent.stoppingDistance && !isDead)
                 {
                     StartCoroutine(melee());
                 }
@@ -149,7 +157,9 @@ public class MeleeEnemy : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        
+        floatingText.damage = amount;
+        Instantiate(textToSpawn, textSpawnPos);
+
         UpdateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
         if (!isDead)
@@ -164,6 +174,10 @@ public class MeleeEnemy : MonoBehaviour, IDamage
         if (HP <= 0)
         {
             anim.SetBool("isDead", true);
+            floatingText.exp = 60;
+            Instantiate(expText, expSpawnPos);
+            Instantiate(expNumText, expNumSpawnPos);
+
             if (!isDead)
             {
                 gameManager.instance.playerScript.giveXP(60);
@@ -172,7 +186,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
                 agent.velocity = Vector3.zero;
                 agent.acceleration = 0;
                 anim.SetTrigger("Death");
-                EnemyUI.SetActive(false);
+                
                 isDead = true;
             }
 
@@ -183,6 +197,7 @@ public class MeleeEnemy : MonoBehaviour, IDamage
 
     public void death()
     {
+        EnemyUI.SetActive(false);
         Destroy(gameObject);
         gameManager.instance.UpdateGameGoal(-1);
     }

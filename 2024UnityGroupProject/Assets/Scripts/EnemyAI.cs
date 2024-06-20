@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -30,15 +31,23 @@ public class EnemyAI : MonoBehaviour, IDamage
     [SerializeField] float shootRate;
 
 
+    [SerializeField] GameObject textToSpawn;
+    [SerializeField] Transform textSpawnPos;
+    [SerializeField] GameObject expNumText;
+    [SerializeField] GameObject expText;
+    [SerializeField] Transform expSpawnPos;
+    [SerializeField] Transform expNumSpawnPos;
+
+
     public Image enemyHPBarBack;
     public Image enemyHPBar;
     public Image enemyName;
-    public Image sniperSkull;
 
     bool isShooting;
     bool playerInRange;
     bool destChosen;
     bool isDead = false;
+    [SerializeField] bool isGeneral;
 
     Vector3 playerDir;
     Vector3 startingPos;
@@ -56,6 +65,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         stoppingDistOrig = agent.stoppingDistance;
         HPOrig = HP;
         UpdateEnemyUI();
+        
         //gameManager.instance.UpdateGameGoal(1);
     }
 
@@ -74,14 +84,11 @@ public class EnemyAI : MonoBehaviour, IDamage
             StartCoroutine(roam());
         }
 
-        enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
-        enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
-        enemyName.transform.rotation = gameManager.instance.player.transform.rotation;
-        if(sniperSkull != null)
-        {
-            sniperSkull.transform.rotation = gameManager.instance.player.transform.rotation;
-        }
-        
+        EnemyUI.transform.rotation = gameManager.instance.player.transform.rotation;
+        //enemyHPBar.transform.rotation = gameManager.instance.player.transform.rotation;
+        //enemyHPBarBack.transform.rotation = gameManager.instance.player.transform.rotation;
+        //enemyName.transform.rotation = gameManager.instance.player.transform.rotation;
+        //floatingTextDamage.transform.rotation = gameManager.instance.player.transform.rotation;
         
     }
 
@@ -162,8 +169,16 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     public void takeDamage(int amount)
     {
+        floatingText.damage = amount;
+        //damageTextTimer = 0;
+
         HP -= amount;
-        
+
+        //floatingDamageText.text = amount.ToString("F0");
+        //floatingTextDamage.SetActive(true);
+
+        Instantiate(textToSpawn, textSpawnPos);
+
         UpdateEnemyUI();
         agent.SetDestination(gameManager.instance.player.transform.position);
         if (!isDead)
@@ -178,9 +193,22 @@ public class EnemyAI : MonoBehaviour, IDamage
         {
             dropChance = Random.Range(0, 100);
             anim.SetBool("isDead", true);
+
+            if (isGeneral)
+            {
+                floatingText.exp = 100;
+                Instantiate(expText, expSpawnPos);
+                Instantiate(expNumText, expNumSpawnPos);
+            }
+            else
+            {
+                floatingText.exp = 60;
+                Instantiate(expText, expSpawnPos);
+                Instantiate(expNumText, expNumSpawnPos);
+            }
             
 
-            if(dropChance >= 50)
+            if (dropChance >= 50)
             {
                 Instantiate(ItemToSpawn, itemSpawnPos.position, transform.rotation);
             }
@@ -196,7 +224,7 @@ public class EnemyAI : MonoBehaviour, IDamage
 
 
                 anim.SetTrigger("Death");
-                EnemyUI.SetActive(false);
+                
                 isDead = true;
                 
             }
@@ -204,11 +232,13 @@ public class EnemyAI : MonoBehaviour, IDamage
             
             
         }
+        
+        
     }
 
     public void death()
     {
-        
+        EnemyUI.SetActive(false);
         Destroy(gameObject);
         gameManager.instance.UpdateGameGoal(-1);
         
