@@ -17,7 +17,8 @@ public class buttonFunctions : MonoBehaviour
     public static int currency;
     int currencyOrig;
 
-    public static List<gunStats> gunList = new List<gunStats>();
+    public static List<gunStats> gunList;
+    public static bool gunsSaved;
 
     int pistolPrice = 50;
     int shotgunPrice = 70;
@@ -31,6 +32,11 @@ public class buttonFunctions : MonoBehaviour
         if (MainMenu.isNewGame)
         {
             SetPlayerStats();
+        }
+
+        if(gunList == null)
+        {
+            gunList = new List<gunStats>();
         }
         
         currencyOrig = currency;
@@ -143,7 +149,8 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.playerScript.setLvl(currentPlayerLvl);
         gameManager.instance.playerScript.setXp(xp);
         gameManager.instance.playerScript.setXPMax(maxXP);
-        gameManager.instance.playerScript.setGunList(gunList);
+        gunsSaved = true;
+        //gameManager.instance.playerScript.setGunList(gunList);
 
     }
 

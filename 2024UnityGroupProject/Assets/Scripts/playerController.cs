@@ -128,7 +128,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gameManager.instance.UpdateCurrencyText(buttonFunctions.currency);
         gameManager.moneySaved = false;
         spawnPlayer();
-        
+        if (buttonFunctions.gunsSaved)
+        {
+             setGunList(buttonFunctions.gunList);
+            
+            
+        }
 
     }
 
@@ -806,11 +811,19 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
     public void setGunList(List<gunStats> GunList)
     {
-        for (int i = 0; i < gunList.Count - 1; i++)
+        for (int i = 0; i < GunList.Count; i++)
         {
             gunList.Add(GunList[i]);
         }
         
+        if(gunList.Count > 0)
+        {
+            Debug.Log("Guns added successfully");
+        }
+        else
+        {
+            Debug.Log("Guns failed to be added");
+        }
     }
 }
 
