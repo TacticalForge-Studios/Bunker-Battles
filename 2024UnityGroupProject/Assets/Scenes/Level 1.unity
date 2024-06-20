@@ -6418,10 +6418,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1441167606}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: footstepVol
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: healthLevel
       value: 
       objectReference: {fileID: 3628481749921127354}
@@ -6434,29 +6430,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3628481749921127352}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: footstepSounds
-      value: 
-      objectReference: {fileID: 8300000, guid: 92aa1817e100f974f9f63d4989bf9eab, type: 3}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: takingArmDamage
       value: 
       objectReference: {fileID: 1390553643}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: audJump.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: audJump.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8b9496ccde1c1a44dbd3fc1822b3b965, type: 3}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: audJump.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: eff5447fdd3522e46af1718801a036f6, type: 3}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: audJump.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: e84f5be5a8750234fae035cf8d5aeaed, type: 3}
     - target: {fileID: 3360185070103637596, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5

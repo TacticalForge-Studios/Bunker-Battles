@@ -29,7 +29,7 @@ public class buttonFunctions : MonoBehaviour
 
     private void Awake()
     {
-        if (MainMenu.isNewGame)
+        if (MainMenu.isNewGame || HP == 0)
         {
             SetPlayerStats();
         }
