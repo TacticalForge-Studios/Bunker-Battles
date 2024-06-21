@@ -965,6 +965,7 @@ MonoBehaviour:
   StaminaMax: {fileID: 0}
   xpCurrent: {fileID: 0}
   xpMax: {fileID: 0}
+  medkitCount: {fileID: 0}
   takingDamage: {fileID: 0}
   takingArmDamage: {fileID: 0}
   lowHealth: {fileID: 0}

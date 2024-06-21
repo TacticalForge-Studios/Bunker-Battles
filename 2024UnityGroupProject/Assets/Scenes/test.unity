@@ -971,7 +971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.142973
+      value: -2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1273,6 +1273,17 @@ PrefabInstance:
 --- !u!114 &404580251 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6529222337444836822, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 6013994491228557088}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &407939754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6557753782675281997, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
   m_PrefabInstance: {fileID: 6013994491228557088}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -1905,7 +1916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.283976
+      value: 6.191
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1940,11 +1951,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
---- !u!95 &1418706201 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1158287566020650036, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-  m_PrefabInstance: {fileID: 2104691244}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1550353299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2369,7 +2375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.388147
+      value: 11.722
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2377,7 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.976265
+      value: 2.034
       objectReference: {fileID: 0}
     - target: {fileID: 7929606202811998625, guid: 6436a368ae71cae489850e1b4a3e3c56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2640,10 +2646,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 1418706201}
-    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: xpMax
       value: 
       objectReference: {fileID: 477554694}
@@ -2683,6 +2685,10 @@ PrefabInstance:
       propertyPath: healthLevel
       value: 
       objectReference: {fileID: 1568945077}
+    - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: medkitCount
+      value: 
+      objectReference: {fileID: 407939754}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: takingDamage
       value: 
@@ -2960,10 +2966,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1822345263460067759, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
-      propertyPath: meleeDamage
-      value: 
-      objectReference: {fileID: 5585557087385089701, guid: 47fddfbf7a0fa5a4e883f3957b753c20, type: 3}
     - target: {fileID: 3096458390230706393, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
       propertyPath: m_Name
       value: UI

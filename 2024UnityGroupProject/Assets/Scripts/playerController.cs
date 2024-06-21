@@ -17,6 +17,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] float Armor;
     [SerializeField] int speed;
     int origSpeed;
+    int amountOfMedkits;
     [SerializeField] int sprintMod;
     [SerializeField] int jumpMax;
     [SerializeField] int jumpSpeed;
@@ -43,6 +44,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] TMP_Text xpCurrent;
     [SerializeField] TMP_Text xpMax;
 
+    [SerializeField] TMP_Text medkitCount;
 
     [SerializeField] GameObject takingDamage;
     [SerializeField] GameObject takingArmDamage;
@@ -108,6 +110,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     bool flashlightOn = false;
     bool didGunChange = false;
     bool isCrouching = false;
+    public static bool didPickUp;
     
     
 
@@ -187,12 +190,36 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
         if (Input.GetButtonDown("Interact"))
         {
-            Debug.Log("Player pressed E");
+
+            if (Medkit.isInRange)
+            {
+                didPickUp = true;
+                amountOfMedkits += 1;
+                updatePlayerUI();
+            }
 
             if (store.isInRange)
             {
                 gameManager.instance.storeScript.OpenStore();
             }
+        }
+
+        if (Input.GetButtonDown("Heal"))
+        {
+            if(amountOfMedkits > 0)
+            {
+                if (HP < HPOrig)
+                {
+                    Heal(10);
+                    amountOfMedkits -= 1;
+                    if (HP > HPOrig)
+                    {
+                        HP = HPOrig;
+                        updatePlayerUI();
+                    }
+                }
+            }
+            
         }
 
 
@@ -566,6 +593,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
         xpCurrent.text = xp.ToString("F0");
         xpMax.text = maxXP.ToString("F0");
+
+        medkitCount.text = amountOfMedkits.ToString("F0");
 
         if (HP < HPOrig / 5)
         {
