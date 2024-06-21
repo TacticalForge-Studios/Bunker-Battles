@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public static bool isNewGame = false;
+    public static bool isTutorial;
 
     private void Awake()
     {
@@ -15,10 +16,20 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         isNewGame = true;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level 1");
         
         
     }
+
+    public void LoadTutorial()
+    {
+        isTutorial = true;
+        SceneManager.LoadScene("Tutorial Level");
+        buttonFunctions.currency = 500;
+        
+    }
+
+
 
     public void QuitGame()
     {
