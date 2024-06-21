@@ -8,13 +8,13 @@ public class meleeHit : MonoBehaviour
 {
     [SerializeField] Rigidbody rb;
 
-    [SerializeField] int damage;
+    int damage;
     [SerializeField] bool hit;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        damage = difficultyManager.getMeleeDamage();
     }
 
     void OnTriggerEnter(Collider other)
@@ -61,7 +61,10 @@ public class meleeHit : MonoBehaviour
         }
     }
         
-
+    public void setDamage(int _damage)
+    {
+        damage = _damage;
+    }
         
     
 }

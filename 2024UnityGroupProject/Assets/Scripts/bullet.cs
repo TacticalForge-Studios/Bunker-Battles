@@ -104,4 +104,14 @@ public class bullet : MonoBehaviour
         
         
     }
+
+    public int getDamage()
+    {
+        return damage;
+    }
+
+    public void setDamage(int _damage)
+    {
+        damage = _damage;
+    }
 }

@@ -6637,6 +6637,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 1822345263460067759, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+      propertyPath: meleeDamage
+      value: 
+      objectReference: {fileID: 5585557087385089701, guid: 47fddfbf7a0fa5a4e883f3957b753c20, type: 3}
     - target: {fileID: 2849628078566149676, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
       propertyPath: m_SizeDelta.x
       value: 370
