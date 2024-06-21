@@ -882,6 +882,7 @@ GameObject:
   - component: {fileID: 3558631038887335386}
   - component: {fileID: 57026755239583372}
   - component: {fileID: 1650678317751128882}
+  - component: {fileID: 3907586898810806686}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -991,8 +992,6 @@ MonoBehaviour:
   AmmoFailSoundVol: 1
   gunPickUpSound: {fileID: 8300000, guid: 35e94596fe6bf96468dca15c440f7c9d, type: 3}
   gunPickUpVol: 0.515
-  footstepSounds: {fileID: 8300000, guid: 92aa1817e100f974f9f63d4989bf9eab, type: 3}
-  footstepVol: 1
   deathSound: {fileID: 8300000, guid: 37e287e056a78774c9cc29ac0bd3bc12, type: 3}
   deathVol: 1
   gunList: []
@@ -1134,14 +1133,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8254826713452553207}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 92aa1817e100f974f9f63d4989bf9eab, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1223,6 +1222,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3907586898810806686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254826713452553207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277c3c4a25302e5418f46249233ff71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSounds: {fileID: 1650678317751128882}
 --- !u!1 &8911508331084624795
 GameObject:
   m_ObjectHideFlags: 0
