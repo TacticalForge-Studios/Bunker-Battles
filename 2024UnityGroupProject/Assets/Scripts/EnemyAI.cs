@@ -199,6 +199,7 @@ public class EnemyAI : MonoBehaviour, IDamage
                 floatingText.exp = 100;
                 Instantiate(expText, expSpawnPos);
                 Instantiate(expNumText, expNumSpawnPos);
+                bossFight.deadGeneral = true;
             }
             else
             {

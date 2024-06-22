@@ -9,7 +9,7 @@ public class spawner : MonoBehaviour
     [SerializeField] int spawnTimer;
     [SerializeField] Transform[] spawnPos;
 
-    int spawnCount;
+    public static int spawnCount;
     bool isSpawning;
     bool startSpawning;
 
@@ -103,6 +103,11 @@ public class spawner : MonoBehaviour
         isSpawning = false;
 
 
+    }
+
+    public int getNumberToSpawn()
+    {
+        return numberToSpawn;
     }
 
 

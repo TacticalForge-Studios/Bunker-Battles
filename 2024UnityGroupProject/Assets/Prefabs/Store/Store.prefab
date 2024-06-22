@@ -270,11 +270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12500024
+      value: 0.1250002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.7950797
+      value: 5.79508
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
       propertyPath: m_LocalRotation.w
@@ -321,6 +321,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3534194276943704046}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6917618238605934957}
   m_SourcePrefab: {fileID: 100100000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
 --- !u!95 &6586727375619983374 stripped
 Animator:
@@ -374,6 +377,27 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 2.09
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6917618238605934957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586727375629384654}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 2.2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6586727375629543406 stripped
 Transform:
