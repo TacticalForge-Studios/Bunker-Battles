@@ -26,10 +26,5 @@ public class bossFight : MonoBehaviour
 
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        
-    }
-
 
 }

@@ -6,16 +6,20 @@ public class footSteps : MonoBehaviour
 {
     public AudioSource footstepSounds;
 
+
     private void Update()
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+
+        
+        if (transform.hasChanged)
         {
             footstepSounds.enabled = true;
+            transform.hasChanged = false;
         }
         else
         {
             footstepSounds.enabled = false;
-           
+
         }
     }
 }

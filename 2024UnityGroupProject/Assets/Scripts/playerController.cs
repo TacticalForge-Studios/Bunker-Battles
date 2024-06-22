@@ -69,6 +69,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip gunPickUpSound;
     [Range(0, 1)][SerializeField] float gunPickUpVol;
 
+    [SerializeField] AudioClip footStepSounds;
+    [Range(0, 1)][SerializeField] float footStepVol;
+
     //[SerializeField] AudioClip footstepSounds;
     //[Range(0, 1)][SerializeField] float footstepVol;
 
@@ -151,11 +154,9 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         }
         timeSinceTakenDamage += Time.deltaTime;
         RechargeArmor();
-        
-        
 
+        
     }
-
     void movement()
     {
         sprint();
