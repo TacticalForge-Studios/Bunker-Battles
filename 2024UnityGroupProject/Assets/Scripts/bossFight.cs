@@ -6,6 +6,7 @@ public class bossFight : MonoBehaviour
 {
     [SerializeField] GameObject door;
     [SerializeField] spawner spawn;
+    [SerializeField] GameObject defeatTheGeneralText;
     public static bool deadGeneral = false;
 
     private void Update()
@@ -15,7 +16,8 @@ public class bossFight : MonoBehaviour
             door.SetActive(false);
             int numberDead = spawn.getNumberToSpawn() - spawner.spawnCount;
             gameManager.instance.UpdateGameGoal(-numberDead);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            defeatTheGeneralText.SetActive(false);
         }
     }
 

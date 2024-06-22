@@ -430,24 +430,28 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
                
                 dmg.takeDamage(shootDamage);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
+                
             }
             else if (hit.transform.CompareTag("Head"))
             {
                 EnemyAI enemy = hit.transform.GetComponentInParent<EnemyAI>();
                 enemy.takeDamage(shootDamage * 2);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
+                
             }
             else if (hit.transform.CompareTag("MeleeHead"))
             {
                 MeleeEnemy enemy = hit.transform.GetComponentInParent<MeleeEnemy>();
                 enemy.takeDamage(shootDamage * 2);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
+                
             }
 
             else
             {
 
                 Instantiate(hitEffect, hit.point, Quaternion.identity);
+                
             }
 
         }
@@ -455,6 +459,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }
+    
 
     IEnumerator flashMuzzle()
     {

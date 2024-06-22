@@ -18,6 +18,7 @@ public class spawner : MonoBehaviour
     void Start()
     {
         gameManager.instance.UpdateGameGoal(numberToSpawn);
+        Debug.Log(spawnCount);
     }
 
     // Update is called once per frame
@@ -93,14 +94,19 @@ public class spawner : MonoBehaviour
         }
         else if (objectToSpawn.Length == 1)
         {
-            
-            int arrayPosition = Random.Range(0, spawnPos.Length);
-            Instantiate(objectToSpawn[0], spawnPos[arrayPosition].position, spawnPos[arrayPosition].rotation);
-            spawnCount++;
-            yield return new WaitForSeconds(spawnTimer);
+            for(int i = 0; i < numberToSpawn; i++)
+            {
+                int arrayPosition = Random.Range(0, spawnPos.Length);
+                Instantiate(objectToSpawn[0], spawnPos[arrayPosition].position, spawnPos[arrayPosition].rotation);
+                spawnCount++;
+                yield return new WaitForSeconds(spawnTimer);
+            }
+                
             
         }
         isSpawning = false;
+        spawnCount = 0;
+        gameObject.SetActive(false);
 
 
     }

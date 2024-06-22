@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3717648395170175464}
   - component: {fileID: 2018476476186072508}
   - component: {fileID: -2777025594776157328}
+  - component: {fileID: -8620558522121190831}
   m_Layer: 0
   m_Name: Hit Effect - Yellow
   m_TagString: Untagged
@@ -4937,3 +4938,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8620558522121190831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388126858563961866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7245d7c7fea91da4c86db839a693e1e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
