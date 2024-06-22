@@ -7841,22 +7841,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1650678317751128882, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650678317751128882, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650678317751128882, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 92aa1817e100f974f9f63d4989bf9eab, type: 3}
-    - target: {fileID: 1650678317751128882, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: xpMax
       value: 
