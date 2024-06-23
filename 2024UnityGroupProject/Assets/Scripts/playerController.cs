@@ -335,7 +335,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         if (isCrouching == true)
         {
             controller.height = controller.height - crouchSpeed * Time.deltaTime;
-
+            speed /= 2;
             if (controller.height <= crouchHeight)
             {
                 controller.height = crouchHeight;
