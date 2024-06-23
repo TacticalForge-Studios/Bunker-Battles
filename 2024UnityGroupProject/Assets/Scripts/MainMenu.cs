@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         isNewGame = true;
+        SaveLoadManager.instance.ClearSave();
         SceneManager.LoadScene("Level 1");
         
         

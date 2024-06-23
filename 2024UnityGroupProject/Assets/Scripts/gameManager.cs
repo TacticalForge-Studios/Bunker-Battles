@@ -14,6 +14,7 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
     [SerializeField] GameObject menuLevelUp;
+    [SerializeField] GameObject menuSaveMenu;
 
 
     public Image playerHPBar;
