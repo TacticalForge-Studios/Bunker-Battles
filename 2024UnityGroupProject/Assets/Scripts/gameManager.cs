@@ -9,11 +9,12 @@ public class gameManager : MonoBehaviour
 {
     public static gameManager instance;
 
-    [SerializeField] GameObject menuActive;
-    [SerializeField] GameObject menuPause;
+    [SerializeField] public GameObject menuActive;
+    [SerializeField] public GameObject menuPause;
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
     [SerializeField] GameObject menuLevelUp;
+    public bool storeUI;
     [SerializeField] GameObject menuSaveMenu;
 
 
@@ -73,7 +74,18 @@ public class gameManager : MonoBehaviour
             }
             else if (menuActive == menuPause)
             {
-                stateUnPause();
+                if (storeUI)
+                {
+                    
+                    storeUI = false;
+                    storeScript.storeUI.SetActive(false);
+                    stateUnPause();
+                }
+                else
+                {
+                    stateUnPause();
+                }
+                
             }
         }
     }

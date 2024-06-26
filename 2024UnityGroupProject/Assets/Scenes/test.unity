@@ -1381,6 +1381,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5751c8c3a46d3754f851a916b865ab79, type: 3}
+--- !u!1 &526166084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7581045414154108459, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 6013994491228557088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &651889508 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 750766888859910688, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
@@ -2970,6 +2975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4027799928168232155, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5017360772678518665, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3071,6 +3080,10 @@ PrefabInstance:
       propertyPath: MoneyText
       value: 
       objectReference: {fileID: 651889508}
+    - target: {fileID: 6041531378391572016, guid: 713c6d032f9875949819299b1fe017d6, type: 3}
+      propertyPath: ownedPopUp
+      value: 
+      objectReference: {fileID: 526166084}
     - target: {fileID: 6041531378391572016, guid: 713c6d032f9875949819299b1fe017d6, type: 3}
       propertyPath: noMoneyPopUp
       value: 

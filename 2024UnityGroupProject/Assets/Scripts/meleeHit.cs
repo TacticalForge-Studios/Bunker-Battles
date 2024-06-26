@@ -56,7 +56,7 @@ public class meleeHit : MonoBehaviour
         {
             
             dmg.takeDamage(damage);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(1);
             hit = false;
         }
     }

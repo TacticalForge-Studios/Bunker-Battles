@@ -7,18 +7,19 @@ using UnityEngine;
 public class store : MonoBehaviour
 {
     [Header("Store UI")]
-    [SerializeField] GameObject storeUI;
+    [SerializeField] public GameObject storeUI;
 
     [Header("Animation")]
     [SerializeField] Animator anim;
     [SerializeField] GameObject textMessagePopUp;
     [SerializeField] public GameObject noMoneyPopUp;
+    [SerializeField] public GameObject ownedPopUp;
 
     [Header("Purchasables")]
-    [SerializeField] gunStats Pistol;
-    [SerializeField] gunStats Rifle;
-    [SerializeField] gunStats Shotgun;
-    [SerializeField] gunStats machineGun;
+    [SerializeField] public gunStats Pistol;
+    [SerializeField] public gunStats Rifle;
+    [SerializeField] public gunStats Shotgun;
+    [SerializeField] public gunStats machineGun;
 
     [SerializeField] TMP_Text MoneyText;
     public TMP_Text moneyTextCount;
@@ -56,6 +57,8 @@ public class store : MonoBehaviour
 
     public void OpenStore()
     {
+        gameManager.instance.menuActive = gameManager.instance.menuPause;
+        gameManager.instance.storeUI = true;
         UpdateStoreCurrencyText();
         anim.SetBool("isOpened", true);
         //gameManager.instance.statePause();

@@ -296,6 +296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun_3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
+      propertyPath: m_TagString
+      value: MG
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.00222735
@@ -466,10 +470,12 @@ MonoBehaviour:
   anim: {fileID: 6288580413116805898}
   model: {fileID: 6288580413112683978}
   shootPos: {fileID: 7421463790686204442}
+  headPos: {fileID: 0}
   HP: 20
   animSpeedTrans: 5
   faceTargetSpeed: 10
   shootRate: 0.1
+  viewAngle: 0
   bullet: {fileID: 6610430800471585784, guid: 79868086602e7204084e1b38937c5da6, type: 3}
   TurretUI: {fileID: 0}
   turrentHPBarBack: {fileID: 145987639867273121}

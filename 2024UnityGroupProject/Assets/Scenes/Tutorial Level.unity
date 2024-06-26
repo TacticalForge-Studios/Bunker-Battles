@@ -3129,6 +3129,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &590926336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7581045414154108459, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+  m_PrefabInstance: {fileID: 590926334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &609864238
 Mesh:
   m_ObjectHideFlags: 0
@@ -13382,6 +13387,10 @@ PrefabInstance:
       propertyPath: MoneyText
       value: 
       objectReference: {fileID: 1298043100}
+    - target: {fileID: 6041531378391572016, guid: 713c6d032f9875949819299b1fe017d6, type: 3}
+      propertyPath: ownedPopUp
+      value: 
+      objectReference: {fileID: 590926336}
     - target: {fileID: 6041531378391572016, guid: 713c6d032f9875949819299b1fe017d6, type: 3}
       propertyPath: noMoneyPopUp
       value: 

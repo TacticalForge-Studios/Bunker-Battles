@@ -15,7 +15,11 @@ public class buttonFunctions : MonoBehaviour
     public static float maxXP;
     public static int xp;
     public static int currency;
-    int currencyOrig;
+    static int currencyOrig;
+    static int HPOrig;
+    static int xpOrig;
+    static float xpMaxOrig;
+    static int currentPlayLevel;
 
     public static List<gunStats> gunList;
     public static bool gunsSaved;
@@ -40,6 +44,11 @@ public class buttonFunctions : MonoBehaviour
         }
         
         currencyOrig = currency;
+        HPOrig = HP;
+        xpOrig = xp;
+        xpMaxOrig = maxXP;
+        currentPlayLevel = currentPlayerLvl;
+        
     }
 
     private void Update()
@@ -52,6 +61,7 @@ public class buttonFunctions : MonoBehaviour
         if(HP == 0)
         {
             HP = 20;
+            HPOrig = HP;
             stamina = 100;
             currentPlayerLvl = 1;
             armorOrig = 10;
@@ -99,7 +109,10 @@ public class buttonFunctions : MonoBehaviour
     public void Restart()
     {
         currency = currencyOrig;
-        xp = 0;
+        xp = xpOrig;
+        maxXP = xpMaxOrig;
+        currentPlayerLvl = currentPlayLevel;
+        HP = HPOrig;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameManager.instance.stateUnPause();
     }
@@ -166,6 +179,7 @@ public class buttonFunctions : MonoBehaviour
     public void CloseStore()
     {
         gameManager.instance.storeScript.GunPurchased(6);
+        gameManager.instance.menuActive = null;
     }
 
 
@@ -175,6 +189,13 @@ public class buttonFunctions : MonoBehaviour
         if(currency < pistolPrice)
         {
             StartCoroutine(noMoney());
+        }
+
+        if (gameManager.instance.playerScript.gunList.Contains(gameManager.instance.storeScript.Pistol))
+        {
+            Debug.Log("Weapon Owned");
+            StartCoroutine(weaponOwned());
+            return;
         }
 
         if(currency >= pistolPrice)
@@ -193,6 +214,13 @@ public class buttonFunctions : MonoBehaviour
         if(currency < shotgunPrice)
         {
             StartCoroutine(noMoney());
+        }
+
+        if (gameManager.instance.playerScript.gunList.Contains(gameManager.instance.storeScript.Shotgun))
+        {
+            Debug.Log("Weapon Owned");
+            StartCoroutine(weaponOwned());
+            return;
         }
 
         if (currency >= shotgunPrice)
@@ -214,6 +242,13 @@ public class buttonFunctions : MonoBehaviour
             StartCoroutine(noMoney());
         }
 
+        if (gameManager.instance.playerScript.gunList.Contains(gameManager.instance.storeScript.Rifle))
+        {
+            Debug.Log("Weapon Owned");
+            StartCoroutine(weaponOwned());
+            return;
+        }
+
         if (currency >= riflePrice)
         {
             currency -= riflePrice;
@@ -231,6 +266,13 @@ public class buttonFunctions : MonoBehaviour
         if (currency < machineGunPrice)
         {
             StartCoroutine(noMoney());
+        }
+
+        if (gameManager.instance.playerScript.gunList.Contains(gameManager.instance.storeScript.machineGun))
+        {
+            Debug.Log("Weapon Owned");
+            StartCoroutine(weaponOwned());
+            return;
         }
 
         if (currency >= machineGunPrice)
@@ -288,6 +330,13 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.storeScript.noMoneyPopUp.SetActive(true);
         yield return new WaitForSeconds(2);
         gameManager.instance.storeScript.noMoneyPopUp.SetActive(false);
+    }
+
+    IEnumerator weaponOwned()
+    {
+        gameManager.instance.storeScript.ownedPopUp.SetActive(true);
+        yield return new WaitForSeconds(2);
+        gameManager.instance.storeScript.ownedPopUp.SetActive(false);
     }
 
 }

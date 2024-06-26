@@ -320,10 +320,10 @@ PrefabInstance:
       addedObject: {fileID: 6041531378391572016}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3534194276943704046}
+      addedObject: {fileID: 6917618238605934957}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6917618238605934957}
+      addedObject: {fileID: 4198184484298918516}
   m_SourcePrefab: {fileID: 100100000, guid: dfd4c498a63f0cd498945f05fe6c0170, type: 3}
 --- !u!95 &6586727375619983374 stripped
 Animator:
@@ -351,33 +351,13 @@ MonoBehaviour:
   anim: {fileID: 6586727375619983374}
   textMessagePopUp: {fileID: 7480813449423148150}
   noMoneyPopUp: {fileID: 0}
+  ownedPopUp: {fileID: 0}
   Pistol: {fileID: 11400000, guid: 61a27a71147a7f349bb8604918937a1c, type: 2}
   Rifle: {fileID: 11400000, guid: 60830eb4f5fe8a24ca6ecac13176be8c, type: 2}
   Shotgun: {fileID: 11400000, guid: 65ac77b09f69c90478f7ead35811b08d, type: 2}
   machineGun: {fileID: 11400000, guid: 752a159cd910f2e45831e4e22ed84de6, type: 2}
   MoneyText: {fileID: 0}
   moneyTextCount: {fileID: 0}
---- !u!135 &3534194276943704046
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6586727375629384654}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 2.09
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6917618238605934957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -398,6 +378,27 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.5, y: 2.2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &4198184484298918516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586727375629384654}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.36, y: 3, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6586727375629543406 stripped
 Transform:

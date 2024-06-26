@@ -8,7 +8,15 @@ public class tutorialPopUps : MonoBehaviour
     [SerializeField] GameObject textMessage;
 
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.GetComponent<playerController>())
+    //    {
+    //        textMessage.SetActive(true);
+    //    }
+    //}
+
+    private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<playerController>())
         {

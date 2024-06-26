@@ -47,6 +47,7 @@ public class Medkit : MonoBehaviour
         {
             heal.Heal(healAmount);
             Destroy(gameObject);
+            isInRange = false;
         }
         
 

@@ -240,7 +240,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
 
         if (Input.GetButtonDown("Reload"))
         {
-            if (gunList[selectedGun].totalAmmoLeft > 0)
+            if (gunList[selectedGun].totalAmmoLeft > 0 && gunList[selectedGun].ammoCurrent != gunList[selectedGun].magCapacity)
             {
                 if (gunList[selectedGun].gunModel.CompareTag("Pistol"))
                 {
@@ -420,44 +420,51 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, shootDist))
         {
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
 
             IDamage dmg = hit.collider.GetComponent<IDamage>();
-            
 
-            if (hit.transform != transform && dmg != null)
+
+            if (hit.transform != transform && dmg != null && !hit.transform.CompareTag("MG"))
             {
-               
+
+                
                 dmg.takeDamage(shootDamage);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
-                
+
+            } 
+            else if (hit.transform.CompareTag("MG"))
+            {
+                machineGunTurret enemy = hit.transform.GetComponentInParent<machineGunTurret>();
+                enemy.takeDamage(shootDamage * 2);
+                Instantiate(hitEffect, hit.point, Quaternion.identity);
             }
             else if (hit.transform.CompareTag("Head"))
             {
                 EnemyAI enemy = hit.transform.GetComponentInParent<EnemyAI>();
                 enemy.takeDamage(shootDamage * 2);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
-                
+
             }
             else if (hit.transform.CompareTag("MeleeHead"))
             {
                 MeleeEnemy enemy = hit.transform.GetComponentInParent<MeleeEnemy>();
                 enemy.takeDamage(shootDamage * 2);
                 Instantiate(hitEffectBlood, hit.point, Quaternion.identity);
-                
+
             }
 
             else
             {
 
                 Instantiate(hitEffect, hit.point, Quaternion.identity);
-                
+
             }
 
         }
 
-        yield return new WaitForSeconds(shootRate);
-        isShooting = false;
+            yield return new WaitForSeconds(shootRate);
+            isShooting = false;
     }
     
 
@@ -777,6 +784,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void setHP(int health)
     {
         HPOrig = health;
+        HP += 10;
     }
 
     public void setStamina(float stamina)
