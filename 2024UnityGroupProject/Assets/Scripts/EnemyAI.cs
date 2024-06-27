@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using TMPro;
 using Unity.VisualScripting;
@@ -156,6 +157,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         {
             playerInRange = true;
         }
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -165,6 +167,8 @@ public class EnemyAI : MonoBehaviour, IDamage
             playerInRange = false;
             agent.stoppingDistance = 0;
         }
+
+        
     }
 
     public void takeDamage(int amount)

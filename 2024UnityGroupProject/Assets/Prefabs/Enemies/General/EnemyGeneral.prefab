@@ -425,7 +425,7 @@ MonoBehaviour:
   shootPos: {fileID: 8164426272653550754}
   headPos: {fileID: 2226789186807913820}
   itemSpawnPos: {fileID: 2090222860030313387}
-  HP: 25
+  HP: 50
   viewAngle: 80
   faceTargetSpeed: 10
   animSpeedTrans: 5

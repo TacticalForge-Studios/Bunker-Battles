@@ -15,10 +15,10 @@ MonoBehaviour:
   gunModel: {fileID: 199669651405181594, guid: 41236ddb97b001d499cadd3503c086dc, type: 3}
   shootDamage: 2
   shootRate: 1
-  shootDist: 50
-  ammoCurrent: 1
+  shootDist: 25
+  ammoCurrent: 6
   ammoMax: 40
-  totalAmmoLeft: 28
+  totalAmmoLeft: 22
   magCapacity: 6
   recoil: 2
   hitEffect: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}

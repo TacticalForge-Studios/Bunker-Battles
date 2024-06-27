@@ -15,7 +15,7 @@ MonoBehaviour:
   gunModel: {fileID: 1189847200281728, guid: 45a95a282f15e7d4e8ca8a001336a7f1, type: 3}
   shootDamage: 1
   shootRate: 0.25
-  shootDist: 40
+  shootDist: 25
   ammoCurrent: 42
   ammoMax: 200
   totalAmmoLeft: 150

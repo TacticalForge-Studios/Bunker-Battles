@@ -134,9 +134,15 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gameManager.instance.UpdateCurrencyText(buttonFunctions.currency);
         gameManager.moneySaved = false;
         spawnPlayer();
-        if (buttonFunctions.gunsSaved)
+        if(MainMenu.isNewGame && buttonFunctions.gunsSaved)
+        {
+            buttonFunctions.gunList.Clear();
+        }
+
+        if (buttonFunctions.gunsSaved && !MainMenu.isNewGame)
         {
              setGunList(buttonFunctions.gunList);
+            changeGun();
             
             
         }
@@ -356,27 +362,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         }
     }
 
-    //void FootstepSounds()
-    //{
-    //    if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
-    //    {
-    //        aud.PlayOneShot(footstepSounds, footstepVol);
-    //    }
-    //    else
-    //    {
-            
-    //    }
-
-    //}
-
     void sprint()
     {
         
 
         if (Input.GetButtonDown("Sprint"))
         {
+            
             isSprinting = true;
             speed *= sprintMod;
+            
+            
 
 
             if(currentStamina <= 0)
