@@ -36,6 +36,17 @@ public class buttonFunctions : MonoBehaviour
         if (MainMenu.isNewGame || HP == 0)
         {
             SetPlayerStats();
+
+            if (gunList == null)
+            {
+                gunList = new List<gunStats>();
+            }
+
+            
+            //foreach (var gun in gunList)
+            //{
+            //    gunList.Remove(gun);
+            //}
         }
 
         if(gunList == null)
@@ -89,7 +100,7 @@ public class buttonFunctions : MonoBehaviour
             maxXP = 100;
             xp = 0;
             currency = 50;
-            MainMenu.isNewGame = false;
+            //MainMenu.isNewGame = false;
         }
         playerArmor = armorOrig;
         
@@ -119,6 +130,7 @@ public class buttonFunctions : MonoBehaviour
 
     public void Quit()
     {
+        gunsSaved = false;
         gameManager.instance.menuUnpause();
         SceneManager.LoadScene(0);
         
@@ -294,7 +306,7 @@ public class buttonFunctions : MonoBehaviour
             StartCoroutine(noMoney());
         }
 
-        if (currency >= ammoPrice)
+        if (currency >= ammoPrice && gameManager.instance.playerScript.gunList[gameManager.instance.playerScript.selectedGun].totalAmmoLeft < gameManager.instance.playerScript.gunList[gameManager.instance.playerScript.selectedGun].ammoMax)
         {
             currency -= ammoPrice;
             gameManager.moneySaved = true;
@@ -313,7 +325,7 @@ public class buttonFunctions : MonoBehaviour
             StartCoroutine(noMoney());
         }
 
-        if (currency >= healPrice)
+        if (currency >= healPrice && gameManager.instance.playerScript.GetHP() < gameManager.instance.playerScript.GetHPOrig())
         {
             currency -= healPrice;
             gameManager.moneySaved = true;

@@ -101,7 +101,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     float staminaRegen = 25.0f;
     float armorRecharge = 2.0f;
     float timeSinceTakenDamage;
-    int selectedGun;
+    public int selectedGun;
     int recoil;
     public float crouchSpeed = 2;
     public float normHeight = 2;
@@ -134,14 +134,18 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         gameManager.instance.UpdateCurrencyText(buttonFunctions.currency);
         gameManager.moneySaved = false;
         spawnPlayer();
-        if(MainMenu.isNewGame && buttonFunctions.gunsSaved)
+        if(MainMenu.isNewGame && !buttonFunctions.gunsSaved)
         {
-            buttonFunctions.gunList.Clear();
+            if(gunList.Count > 0)
+            {
+                gunList.RemoveRange(0, gunList.Count);
+            }
+            
         }
 
         if (buttonFunctions.gunsSaved && !MainMenu.isNewGame)
         {
-             setGunList(buttonFunctions.gunList);
+            setGunList(buttonFunctions.gunList);
             changeGun();
             
             

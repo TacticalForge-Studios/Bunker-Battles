@@ -17,6 +17,7 @@ public class spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.SetActive(true);
         gameManager.instance.UpdateGameGoal(numberToSpawn);
         Debug.Log(spawnCount);
     }

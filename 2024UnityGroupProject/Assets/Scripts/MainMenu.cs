@@ -18,6 +18,16 @@ public class MainMenu : MonoBehaviour
         isNewGame = true;
         SaveLoadManager.instance.ClearSave();
         SceneManager.LoadScene("Level 1");
+
+        if(buttonFunctions.gunList.Count > 0)
+        {
+            foreach (gunStats gun in buttonFunctions.gunList)
+            {
+                buttonFunctions.gunList.Remove(gun);
+            }
+        }
+        
+        
         
         
     }

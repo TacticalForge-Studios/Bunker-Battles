@@ -78,8 +78,9 @@ public class gameManager : MonoBehaviour
                 {
                     
                     storeUI = false;
-                    storeScript.storeUI.SetActive(false);
                     stateUnPause();
+                    storeScript.storeUI.SetActive(false);
+                    
                 }
                 else
                 {
