@@ -10,9 +10,8 @@ public class meleeHit : MonoBehaviour
 
     int damage;
     [SerializeField] bool hit;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private void Update()
     {
         damage = difficultyManager.getMeleeDamage();
     }
