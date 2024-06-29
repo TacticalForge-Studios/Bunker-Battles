@@ -82,9 +82,6 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     [SerializeField] AudioClip footStepSounds;
     [Range(0, 1)][SerializeField] float footStepVol;
 
-    //[SerializeField] AudioClip footstepSounds;
-    //[Range(0, 1)][SerializeField] float footstepVol;
-
     [SerializeField] AudioClip deathSound;
     [Range(0, 1)][SerializeField] float deathVol;
 
@@ -121,14 +118,18 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     List<System.Tuple<GameObject, PlayerStats, PlayerStats>> playerStats = new List<System.Tuple<GameObject, PlayerStats, PlayerStats>>();
 
     bool isShooting;
+    public bool isEmpty = false;
     bool isSprinting = false;
     bool armorBroken = false;
     bool flashlightOn = false;
     bool didGunChange = false;
     bool isCrouching = false;
     public static bool didPickUp;
-    
-    
+
+    public bool GetisEmpty()
+    {
+        return isEmpty;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -224,6 +225,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         
         
     }
+
     void movement()
     {
         sprint();
@@ -290,13 +292,22 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
             
         }
 
-
+        if (gunList.Count > 0 && gunList[selectedGun].ammoCurrent == 0)
+        {
+            isEmpty = true;
+        }
+        else
+        {
+            isEmpty = false;
+        }
        
         if (Input.GetButton("Fire1") && gunList.Count > 0 && gunList[selectedGun].ammoCurrent > 0 && !isShooting)
         {
-            StartCoroutine(Shoot());
 
-            
+            if (!isEmpty)
+            {
+                StartCoroutine(Shoot());
+            }  
         }
         else if(Input.GetButtonDown("Fire1") && gunList.Count > 0 && gunList[selectedGun].ammoCurrent == 0 && !isShooting)
         {
@@ -461,9 +472,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     IEnumerator Shoot()
     {
 
-       
 
-        isShooting = true;
+        if (gunList[selectedGun].ammoCurrent > 0)
+        {
+            isShooting = true;
+        }
+        
 
 
 

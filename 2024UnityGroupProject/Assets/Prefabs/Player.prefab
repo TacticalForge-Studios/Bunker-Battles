@@ -32,6 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4214090110014259762}
   - {fileID: 8259405213977376618}
   m_Father: {fileID: 3360185070103637596}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -90,7 +91,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -119,7 +120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1391774198323017923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +155,7 @@ GameObject:
   - component: {fileID: 2871799386742759482}
   - component: {fileID: 473177554121752206}
   - component: {fileID: 1101111729703056362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShotgunFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +302,7 @@ GameObject:
   - component: {fileID: 1546258178877610892}
   - component: {fileID: 1515410440787122570}
   - component: {fileID: 7678491154165533539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RifleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4709004820615870305}
   - component: {fileID: 1441207630787611637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,6 +531,98 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &5254520017849497453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4214090110014259762}
+  - component: {fileID: 3201681471301239018}
+  - component: {fileID: 6765529954642007737}
+  m_Layer: 0
+  m_Name: WeaponCam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4214090110014259762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254520017849497453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1768265874392535935}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &3201681471301239018
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254520017849497453}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 64
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &6765529954642007737
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254520017849497453}
+  m_Enabled: 0
 --- !u!1 &5836431530296335138
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912766436954736265}
   - component: {fileID: 3178669378665169567}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6543169275274775366}
   - component: {fileID: 4999620035886130923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +823,7 @@ GameObject:
   - component: {fileID: 8114323312819755184}
   - component: {fileID: 3414119630775151605}
   - component: {fileID: 851078063728583788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PistolFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,6 +1235,7 @@ MonoBehaviour:
   gunList: []
   hitEffect: {fileID: 3717648395170175464, guid: 5bd5b65de3d4c44438f1072e929b42bb, type: 3}
   hitEffectBlood: {fileID: 4349289171682470801, guid: 0373245e0cb7efa4eb62f7e68bbfecf2, type: 3}
+  selectedGun: 0
   crouchSpeed: 2
   normHeight: 2
   crouchHeight: 0.2
@@ -1379,7 +1473,7 @@ GameObject:
   - component: {fileID: 3520261828196675984}
   - component: {fileID: 4826240961023636871}
   - component: {fileID: 117756698740846978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1487,7 +1581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197803531628502983}
   - component: {fileID: 8228157180372720030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

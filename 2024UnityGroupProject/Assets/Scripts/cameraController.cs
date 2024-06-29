@@ -43,11 +43,16 @@ public class cameraController : MonoBehaviour
 
         recoilTimer += Time.deltaTime;
 
-        if (Input.GetButton("Fire1") && gameManager.instance.playerScript.checkGunList() && gameManager.instance.playerScript.getIsShooting() && recoilTimer >= gameManager.instance.playerScript.getShootRate())
+        if (!gameManager.instance.playerScript.GetisEmpty())
         {
-            rotX -= gameManager.instance.playerScript.getRecoil();
-            recoilTimer = 0;
+            if (Input.GetButton("Fire1") && gameManager.instance.playerScript.checkGunList() && gameManager.instance.playerScript.getIsShooting() && recoilTimer >= gameManager.instance.playerScript.getShootRate())
+            {
+                rotX -= gameManager.instance.playerScript.getRecoil();
+                recoilTimer = 0;
+                return;
+            }
         }
+        
 
         if (gameManager.instance.playerScript.getDidGunChange())
         {

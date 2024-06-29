@@ -2650,6 +2650,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1738835278349281808, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028420514786061105, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: xpMax
       value: 
@@ -2706,6 +2714,10 @@ PrefabInstance:
       propertyPath: takingArmDamage
       value: 
       objectReference: {fileID: 1544214955780577962}
+    - target: {fileID: 3121254938318647660, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3360185070103637596, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -2746,9 +2758,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4588641564854180355, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836431530296335138, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633777826976632598, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363659392546886840, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8254826713452553207, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542722570942933615, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911508331084624795, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080983855258811086, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
