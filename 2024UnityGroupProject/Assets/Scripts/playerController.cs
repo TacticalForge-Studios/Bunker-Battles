@@ -3,15 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, ammoResupply
+public enum PlayerStats
+{
+    HP,
+    Armor,
+    
+}
+
+public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, ammoResupply, ISaveable
 {
     [SerializeField] CharacterController controller;
     [SerializeField] Animator anim;
     [SerializeField] GameObject gunModel;
+    [SerializeField] string ID = "Bunker Battles-1";
+    
 
     [SerializeField] int HP;
     [SerializeField] float Armor;
@@ -92,6 +102,8 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     int HPOrig;
     int ArmorOrig;
     int xp;
+    int currentHP;
+    float currentArmor;
     float maxXP;
     int currenPlayerLvl;
     float xpModifier = 1.5f;
@@ -106,6 +118,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public float crouchSpeed = 2;
     public float normHeight = 2;
     public float crouchHeight = 0.2f;
+    List<System.Tuple<GameObject, PlayerStats, PlayerStats>> playerStats = new List<System.Tuple<GameObject, PlayerStats, PlayerStats>>();
 
     bool isShooting;
     bool isSprinting = false;
@@ -151,6 +164,50 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
             
         }
 
+        SaveLoadManager.instance.RegisterHandler(this);
+        
+
+        // are we loading from a save file
+        if (SaveLoadManager.instance.savedState != null)
+        {
+            var playerState = SaveLoadManager.instance.savedState.playerState;
+            if (playerState.ID == ID)
+            {
+                foreach (var entry in playerState.entries)
+                {
+                    PlayerStats playerHP = entry.playerHP;
+                    PlayerStats playerArmor = entry.playerArmor;
+                    Vector3 location = new Vector3(entry.location.Item1, entry.location.Item2, entry.location.Item3);
+                }
+
+                return;
+            }
+            updatePlayerUI();
+        }
+
+        
+
+    }
+
+    public void PrepareForSave(SavedGameState gameState)
+    {
+        gameState.playerState.ID = ID;
+        SavePlayer((PlayerStats)currentHP, (PlayerStats)currentArmor, gameManager.instance.player.transform.position);
+
+        foreach (var playerInfo in playerStats)
+        {
+            var location = playerInfo.Item1.transform.position;
+
+            gameState.playerState.entries.Add(new SavedGameState.PlayerState.Entry()
+            {
+                location = new System.Tuple<float, float, float>(location.x, location.y, location.z),
+                playerHP = playerInfo.Item2,
+                playerArmor = playerInfo.Item3,
+                
+            });
+            
+            
+        }
     }
 
     // Update is called once per frame
@@ -164,7 +221,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         }
         timeSinceTakenDamage += Time.deltaTime;
         RechargeArmor();
-
+        
         
     }
     void movement()
@@ -511,7 +568,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     public void takeDamage(int amount)
     {
         timeSinceTakenDamage = 0.0f;
-        float currentArmor = Armor;
+        currentArmor = Armor;
         Armor -= amount;
         if(Armor < 0)
         {
@@ -522,7 +579,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         {
             if (armorBroken)
             {
-                HP -= amount;
+                currentHP = HP -= amount;
             }
             if (amount > currentArmor && !armorBroken)
             {
@@ -535,11 +592,12 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
             
 
         }
-        
+       
 
         updatePlayerUI();
 
         StartCoroutine(flashDamage());
+        
 
         if (HP <= 0)
         {
@@ -867,6 +925,17 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
         {
             Debug.Log("Guns failed to be added");
         }
+    }
+
+    public void SavePlayer(PlayerStats playerHP, PlayerStats playerArmor, Vector3 location)
+    {
+        gameManager.instance.player.transform.position = location;
+        playerHP = (PlayerStats)HP;
+        playerArmor = (PlayerStats)Armor;
+        
+
+
+        playerStats.Add(new System.Tuple<GameObject, PlayerStats, PlayerStats>(gameManager.instance.player, playerHP, playerArmor));
     }
 }
 

@@ -31,13 +31,13 @@ public class gameManager : MonoBehaviour
     public GameObject player;
 
     public GameObject store;
-    
+
 
     [SerializeField] TMP_Text enemyCountText;
     [SerializeField] TMP_Text currencyCountText;
     public TMP_Text ammoCurrText;
     public TMP_Text ammoMaxText;
-    
+
 
     public GameObject playerSpawnPos;
     public GameObject playerFlashDamage;
@@ -59,12 +59,17 @@ public class gameManager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
+        if (MainMenu.isLoaded)
+        {
+            playerSpawnPos.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel"))
         {
             if (menuActive == null)
             {
@@ -76,17 +81,17 @@ public class gameManager : MonoBehaviour
             {
                 if (storeUI)
                 {
-                    
+
                     storeUI = false;
                     stateUnPause();
                     storeScript.storeUI.SetActive(false);
-                    
+
                 }
                 else
                 {
                     stateUnPause();
                 }
-                
+
             }
         }
     }
@@ -105,22 +110,22 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        if(menuActive != null)
+        if (menuActive != null)
         {
             menuActive.SetActive(isPaused);
             menuActive = null;
         }
-        
-        
+
+
     }
-    
+
     public void menuUnpause()
     {
         isPaused = !isPaused;
         Time.timeScale = 1;
         Cursor.visible = true;
-        Cursor.lockState= CursorLockMode.Confined;
-        if(menuActive != null)
+        Cursor.lockState = CursorLockMode.Confined;
+        if (menuActive != null)
         {
             menuActive.SetActive(isPaused);
             menuActive = null;
@@ -132,7 +137,7 @@ public class gameManager : MonoBehaviour
         enemyCount += amount;
         enemyCountText.text = enemyCount.ToString("F0");
 
-        if(enemyCount <= 0)
+        if (enemyCount <= 0)
         {
             statePause();
             menuActive = menuWin;
@@ -160,9 +165,9 @@ public class gameManager : MonoBehaviour
         {
             buttonFunctions.currency += amount;
         }
-        
-        
-        
+
+
+
 
         if (buttonFunctions.currency < 0)
         {
@@ -170,7 +175,7 @@ public class gameManager : MonoBehaviour
         }
 
         currencyCountText.text = buttonFunctions.currency.ToString("F0");
-        
-        
+
+
     }
 }

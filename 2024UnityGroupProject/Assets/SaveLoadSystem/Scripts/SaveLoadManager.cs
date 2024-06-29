@@ -9,19 +9,36 @@ public class SavedGameState
 {
     public int Version = 1;
 
-    public class SimpleSpawnerState
+    //public class SimpleSpawnerState
+    //{
+    //    public class Entry
+    //    {
+    //        public PrimitiveType type;
+    //        public System.Tuple<float, float, float> location;
+    //    }
+
+    //    public string ID;
+    //    public List<Entry> spawnedObjects = new List<Entry>();
+    //}
+
+    //public SimpleSpawnerState spawnerState = new SimpleSpawnerState();
+
+    public class PlayerState
     {
         public class Entry
         {
-            public PrimitiveType type;
+            public PlayerStats playerHP;
+            public PlayerStats playerArmor;
             public System.Tuple<float, float, float> location;
+            
         }
 
         public string ID;
-        public List<Entry> spawnedObjects = new List<Entry>();
+        public string level = SceneManager.GetActiveScene().name;
+        public List<Entry> entries = new List<Entry>();
     }
 
-    public SimpleSpawnerState spawnerState = new SimpleSpawnerState();
+    public PlayerState playerState = new PlayerState();
 }
 
 public enum ESaveSlot

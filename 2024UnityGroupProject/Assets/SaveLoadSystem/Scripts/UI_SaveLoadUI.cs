@@ -104,7 +104,7 @@ public class UI_SaveLoadUI : MonoBehaviour
             SaveLoadManager.instance.RequestSave(selectedSlot, selectedType);
             RefreshUI();
         }
-        gameManager.instance.stateUnPause();
+       
     }
 
     public void SetMode_Save()
