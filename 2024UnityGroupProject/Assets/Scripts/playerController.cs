@@ -125,6 +125,7 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     bool didGunChange = false;
     bool isCrouching = false;
     public static bool didPickUp;
+    public bool isMoving;
 
     public bool GetisEmpty()
     {
@@ -229,11 +230,19 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     void movement()
     {
         sprint();
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
 
         crouch();
     
 
-        if (isSprinting)
+        if (isSprinting && isMoving)
         {
             currentStamina -= staminaDrain * Time.deltaTime;
             
@@ -438,11 +447,14 @@ public class playerController : MonoBehaviour, IDamage, medkitHeal, experience, 
     {
         
 
-        if (Input.GetButtonDown("Sprint"))
+        if (Input.GetButtonDown("Sprint") && isMoving)
         {
+            //if(isMoving)
+            //{
+                isSprinting = true;
+                speed *= sprintMod;
+            //}
             
-            isSprinting = true;
-            speed *= sprintMod;
             
             
 
