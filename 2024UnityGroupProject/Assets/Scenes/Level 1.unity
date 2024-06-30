@@ -7877,6 +7877,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197803531628502983, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738835278349281808, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2402024292728441496, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: xpMax
       value: 
@@ -7972,6 +7980,18 @@ PrefabInstance:
     - target: {fileID: 3360185070103637596, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3414119630775151605, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228157180372720030, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_SpotAngle
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228157180372720030, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8254826713452553207, guid: e937933b9cf9eb749973313f8b17a5a6, type: 3}
       propertyPath: m_Name
