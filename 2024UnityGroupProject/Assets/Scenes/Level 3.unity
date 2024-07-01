@@ -10823,6 +10823,10 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7195892053387920628, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7979962607643112988, guid: a64f3ac75444b44428ae1fee8271bda9, type: 3}
       propertyPath: m_IsActive
       value: 0
