@@ -862,7 +862,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7363659392546886840}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -1177,6 +1177,7 @@ MonoBehaviour:
   controller: {fileID: 415876275501844590}
   anim: {fileID: 1158287566020650036}
   gunModel: {fileID: 8911508331084624795}
+  ID: Bunker Battles-1
   HP: 0
   Armor: 2
   speed: 5
@@ -1239,6 +1240,8 @@ MonoBehaviour:
   crouchSpeed: 2
   normHeight: 2
   crouchHeight: 0.2
+  isEmpty: 0
+  isMoving: 0
 --- !u!143 &415876275501844590
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1597,7 +1600,7 @@ Transform:
   m_GameObject: {fileID: 9080983855258811086}
   serializedVersion: 2
   m_LocalRotation: {x: -0.003672396, y: 0.0030093486, z: 0.00006403936, w: 0.9999888}
-  m_LocalPosition: {x: 0.262, y: 0.198, z: -0.581}
+  m_LocalPosition: {x: 0.262, y: 0.198, z: 0.7390006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1617,8 +1620,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.2
   m_Range: 30
-  m_SpotAngle: 22.6
-  m_InnerSpotAngle: 20.1
+  m_SpotAngle: 50
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
